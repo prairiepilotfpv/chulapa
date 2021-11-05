@@ -111,6 +111,16 @@ var store = [{
         "url": "https://dieghernan.github.io/chulapa/demo/09-image-header",
         "img": "https://dieghernan.github.io/chulapa/assets/img/site/transparent.png"
       },{
+        "title": "Plain page with no tags",
+        "subtitle": "Corner case",
+        "excerpt":
+            "I don’t have tags   --- title: Plain page with no tags subtitle: Corner case show_sociallinks  : true show_tags         : true show_categories   : true show_bottomnavs   : true ---  ",
+        "categories": [],
+        "date": "2021-11-05",
+        "tags": [],
+        "url": "https://dieghernan.github.io/chulapa/demo/10-plainpage-notags",
+        "img": null
+      },{
         "title": "Installation",
         "subtitle": "How to use <span class=\"chulapa\">Chulapa</span>",
         "excerpt":
@@ -190,14 +200,4 @@ var store = [{
         "tags": [],
         "url": "https://dieghernan.github.io/chulapa/docs/variable-dictionary",
         "img": null
-      },{
-        "title": "Current skin",
-        "subtitle": "Showing al the different Bootstrap components available",
-        "excerpt":
-            "This is a demo page showing the different components of Bootstrap and how they look on this site under the current configuration. Previous Next skins skin bootstrap current-theme header-hero image...",
-        "categories": ["skins"],
-        "date": "2015-03-03",
-        "tags": ["skin","bootstrap","current-theme","header-hero","image"],
-        "url": "https://dieghernan.github.io/chulapa/skins/current",
-        "img": "https://dieghernan.github.io/chulapa/assets/img/gallery/florian-wehde-WBGjg0DsO_g-unsplash.jpg"
       }]
