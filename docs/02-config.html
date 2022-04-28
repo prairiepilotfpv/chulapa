@@ -5,7 +5,7 @@
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2022-04-28 20:18:49 +0200 -->
+    <!-- Page build 2022-04-28 20:45:21 +0200 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -17,8 +17,8 @@
       },
       "headline": "Global settings",
       "image": "https://dieghernan.github.io/chulapa/assets/img/site/banner.png",
-      "datePublished": "2022-04-28T20:18:49+02:00",
-      "dateModified": "2022-04-28T20:18:49+02:00",
+      "datePublished": "2022-04-28T20:45:21+02:00",
+      "dateModified": "2022-04-28T20:45:21+02:00",
       "author": {
         "@type": "Person",
         "name": "dieghernan"
@@ -292,15 +292,16 @@
 </code></pre></div></div>
 <p>If you are deploying your site with Github Pages, I recommend using this <a href="https://github.com/marketplace/actions/algolia-jekyll-action">GitHub Action</a> to create and update your Algolia index after every commit automatically.</p>
 <h3 id="comments">Comments</h3>
-<p>You can add a comment feature to a page. Currently only <a href="https://disqus.com/">Disqus</a> is supported:</p>
+<p>You can add a comment feature to a page. Currently <a href="https://disqus.com/">Disqus</a> and <a href="https://giscus.app/">giscus</a> are supported:</p>
 <ul>
  <li><code class="language-plaintext highlighter-rouge">comments</code>:
    <ul>
-     <li><code class="language-plaintext highlighter-rouge">provider</code>: Use <code class="language-plaintext highlighter-rouge">disqus</code> to enable it.</li>
-     <li><code class="language-plaintext highlighter-rouge">disqus_shortname</code>: Add your site id, on <code class="language-plaintext highlighter-rouge">https://DISQUS_SHORTNAME.disqus.com/admin/</code>.</li>
+     <li><code class="language-plaintext highlighter-rouge">provider</code>: Use <code class="language-plaintext highlighter-rouge">disqus</code> or <code class="language-plaintext highlighter-rouge">giscus</code> to enable it.</li>
+     <li><code class="language-plaintext highlighter-rouge">disqus_shortname</code>: Disqus only. Add your site id, on <code class="language-plaintext highlighter-rouge">https://DISQUS_SHORTNAME.disqus.com/admin/</code>.</li>
    </ul>
  </li>
 </ul>
+<p>Configure <strong>giscus</strong> following their instructions and paste the resulting script on a file hosted on your GitHub repo with path <em>./_includes/custom/giscus.html</em>.</p>
 <h2 id="b-navigation">B. Navigation</h2>
 <h3 id="navbar">Navbar</h3>
 <p>Configure the navbar and footer of your site. This theme supports a two-level navigation structure, and features <strong>three different navbar styles</strong>: <code class="language-plaintext highlighter-rouge">fab</code>, as a floating action button with animation, a <strong>classic sticky-top navbar</strong> or <code class="language-plaintext highlighter-rouge">dual</code> that would display as <code class="language-plaintext highlighter-rouge">fab</code> on small devices and as a classic navbar on bigger devices.</p>
