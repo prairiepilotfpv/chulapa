@@ -174,7 +174,7 @@ var store = [{
         "title": "Syntax highlighting demo",
         "subtitle": "Highlighters shipped with this theme.",
         "excerpt":
-            "This page is a demo of the different styles of syntax highlighting shipped by default with this theme. Just make your selection below. Select Theme Theme selected: None chulapa-skin: highlight:...",
+            "This page is a demo of the different styles of syntax highlighting shipped by default with this theme. Just make your selection below. Select Theme None chulapa-skin: highlight: Python @requires_authorization...",
         "categories": [],
         "date": "2022-11-20",
         "tags": [],
