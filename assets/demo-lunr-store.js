@@ -4,7 +4,7 @@ var store = [{
         "title": "<span class=\"chulapa\">Chulapa</span>",
         "subtitle": "A full flexible Jekyll theme for Github Pages <br><span id=\"version\"> on development</span>",
         "excerpt":
-            "Latest release {{ site.github.releases[0].tag_name }} Easy to install Create a fully responsive website hosted on Github in minutes - for free! First-class features Fontawesome, comments, internal search, MathJax, Twitter Cards...",
+            "Latest release {{ site.github.releases[0].tag_name }} Read the docs Easy to install Create a fully responsive website hosted on Github in minutes - for free! First-class features Fontawesome, comments, internal search,...",
         "categories": null,
         "date": null,
         "tags": null,
@@ -29,7 +29,7 @@ var store = [{
         "date": "2022-11-23",
         "tags": ["layout-default","header-base"],
         "url": "https://dieghernan.github.io/chulapa/demo/01-plainpage",
-        "img": null
+        "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-demos.png"
       },{
         "title": "Plain page with image",
         "subtitle": "Expanding the layout",
@@ -39,7 +39,7 @@ var store = [{
         "date": "2022-11-23",
         "tags": ["layout-default","header-base","image","social-links","tags","categories","bottom-navs"],
         "url": "https://dieghernan.github.io/chulapa/demo/02-plainpage-img",
-        "img": "https://dieghernan.github.io/chulapa/assets/img/gallery/black-metal-post-with-sad-face-paint-3314301.jpg"
+        "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-demos.png"
       },{
         "title": "Post header",
         "subtitle": null,
@@ -49,7 +49,7 @@ var store = [{
         "date": "2020-01-01",
         "tags": ["layout-default","header-post","social-links","tags","categories","bottom-navs","author","date"],
         "url": "https://dieghernan.github.io/chulapa/demo/03-postheader",
-        "img": null
+        "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-demos.png"
       },{
         "title": "Landing page",
         "subtitle": "First impression is the last impression",
@@ -59,7 +59,7 @@ var store = [{
         "date": "2020-01-04",
         "tags": ["layout-landingpage","header-hero","social-links","tags","categories","bottom-navs","date","comments","image","author"],
         "url": "https://dieghernan.github.io/chulapa/demo/05-landinghero",
-        "img": "https://dieghernan.github.io/chulapa/assets/img/gallery/time-lapse-photography-of-city-during-night-time-4279199.jpg"
+        "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-demos.png"
       },{
         "title": "Use MathJax",
         "subtitle": "Project page with a hero header",
@@ -69,7 +69,7 @@ var store = [{
         "date": "2020-02-03",
         "tags": ["layout-default","header-hero","mathjax","social-links","tags","categories","bottom-navs","date","project-links","comments"],
         "url": "https://dieghernan.github.io/chulapa/demo/04-heroproject",
-        "img": null
+        "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-demos.png"
       },{
         "title": "A guest author",
         "subtitle": "And with a new project",
@@ -79,7 +79,7 @@ var store = [{
         "date": "2020-02-29",
         "tags": ["layout-default","header-splash","social-links","tags","categories","bottom-navs","date","comments","project-links","author","author-guest"],
         "url": "https://dieghernan.github.io/chulapa/demo/06-guestauthor",
-        "img": null
+        "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-demos.png"
       },{
         "title": "Guest author",
         "subtitle": "But no location or image",
@@ -89,7 +89,7 @@ var store = [{
         "date": "2020-03-01",
         "tags": ["layout-default","header-base","social-links","tags","categories","bottom-navs","date","comments","author","author-guest","no-avatar","no-location"],
         "url": "https://dieghernan.github.io/chulapa/demo/07-guestauthor-no-avatar",
-        "img": null
+        "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-demos.png"
       },{
         "title": "Layout minimal",
         "subtitle": "A blank canvas for you",
@@ -99,7 +99,7 @@ var store = [{
         "date": "2022-11-23",
         "tags": ["layout-minimal","header-splash","image","project-links","bootstrap"],
         "url": "https://dieghernan.github.io/chulapa/demo/08-minimal",
-        "img": "https://dieghernan.github.io/chulapa/assets/img/gallery/city-spain-dense-17658.jpg"
+        "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-demos.png"
       },{
         "title": "Image on header",
         "subtitle": "Transparencies work better",
@@ -109,7 +109,7 @@ var store = [{
         "date": "2022-11-23",
         "tags": ["layout-default","header-image","image"],
         "url": "https://dieghernan.github.io/chulapa/demo/09-image-header",
-        "img": "https://dieghernan.github.io/chulapa/assets/img/site/transparent.png"
+        "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-demos.png"
       },{
         "title": "Plain page with no tags",
         "subtitle": "Corner case",
@@ -119,7 +119,7 @@ var store = [{
         "date": "2022-11-23",
         "tags": [],
         "url": "https://dieghernan.github.io/chulapa/demo/10-plainpage-notags",
-        "img": null
+        "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-demos.png"
       },{
         "title": "Installation",
         "subtitle": "How to use <span class=\"chulapa\">Chulapa</span>",
