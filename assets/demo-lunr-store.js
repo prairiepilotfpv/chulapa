@@ -129,7 +129,7 @@ var store = [{
         "date": "2022-11-23",
         "tags": [],
         "url": "https://dieghernan.github.io/chulapa/docs/01-install",
-        "img": null
+        "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-docs.png"
       },{
         "title": "Global settings",
         "subtitle": "Learn how to set up your new site",
@@ -139,7 +139,7 @@ var store = [{
         "date": "2022-11-23",
         "tags": [],
         "url": "https://dieghernan.github.io/chulapa/docs/02-config",
-        "img": null
+        "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-docs.png"
       },{
         "title": "Theming <span class=\"chulapa\">Chulapa</span>",
         "subtitle": "A powerful interface to pimp your site",
@@ -149,7 +149,7 @@ var store = [{
         "date": "2022-11-23",
         "tags": [],
         "url": "https://dieghernan.github.io/chulapa/docs/03-theming",
-        "img": null
+        "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-docs.png"
       },{
         "title": "Layouts & Snippets",
         "subtitle": "Add your content",
@@ -159,7 +159,7 @@ var store = [{
         "date": "2022-11-23",
         "tags": [],
         "url": "https://dieghernan.github.io/chulapa/docs/04-layouts",
-        "img": null
+        "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-docs.png"
       },{
         "title": "Frequently Asked Questions",
         "subtitle": "Some additional information you may find useful",
@@ -169,7 +169,7 @@ var store = [{
         "date": "2022-11-23",
         "tags": [],
         "url": "https://dieghernan.github.io/chulapa/docs/05-faq",
-        "img": null
+        "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-docs.png"
       },{
         "title": "Syntax highlighting demo",
         "subtitle": "Highlighters shipped with this theme.",
@@ -179,7 +179,7 @@ var store = [{
         "date": "2022-11-23",
         "tags": [],
         "url": "https://dieghernan.github.io/chulapa/docs/syntax-highlighting",
-        "img": null
+        "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-docs.png"
       },{
         "title": "Markdown cheatsheet",
         "subtitle": "The basic syntax of your page",
@@ -189,7 +189,7 @@ var store = [{
         "date": "2022-11-23",
         "tags": [],
         "url": "https://dieghernan.github.io/chulapa/docs/markdown-cheatsheet",
-        "img": null
+        "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-docs.png"
       },{
         "title": "Variables dictionary",
         "subtitle": null,
@@ -199,5 +199,5 @@ var store = [{
         "date": "2022-11-23",
         "tags": [],
         "url": "https://dieghernan.github.io/chulapa/docs/variable-dictionary",
-        "img": null
+        "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-docs.png"
       }]
