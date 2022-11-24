@@ -124,7 +124,7 @@ var store = [{
         "title": "Installation",
         "subtitle": "How to use <span class=\"chulapa\">Chulapa</span>",
         "excerpt":
-            "Chulapa was developed in and for Github. There are three tested possible ways to use Chulapa: 1. Use our Github Template This is the recommended option. Create a Github account,...",
+            "Chulapa was developed in and for Github. There are three tested possible ways to use Chulapa: 1. Use our Github Template Recommended if you are starting from scratch Create a...",
         "categories": [],
         "date": "2022-11-24",
         "tags": [],
