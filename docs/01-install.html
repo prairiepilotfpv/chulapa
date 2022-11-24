@@ -5,7 +5,7 @@
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2022-11-24 16:34:11 +0100 -->
+    <!-- Page build 2022-11-24 16:50:49 +0100 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -17,8 +17,8 @@
       },
       "headline": "Installation",
       "image": "https://dieghernan.github.io/chulapa/assets/img/site/banner-docs.png",
-      "datePublished": "2022-11-24T16:34:11+01:00",
-      "dateModified": "2022-11-24T16:34:11+01:00",
+      "datePublished": "2022-11-24T16:50:49+01:00",
+      "dateModified": "2022-11-24T16:50:49+01:00",
       "author": {
         "@type": "Person",
         "name": "dieghernan"
@@ -183,33 +183,33 @@
 		<div class="row pt-2">
 			<aside class="col-lg-2 mt-lg-3 small"></aside>
 			<article class="col-lg-8 mt-3">
-			<p>[Chulapa]{.chulapa} was developed in and for Github.
-There are two tested possible ways to use [Chulapa]{.chulapa}:</p>
+			<p><span class="chulapa">Chulapa</span> was developed in and for Github.
+There are three tested possible ways to use <span class="chulapa">Chulapa</span>:</p>
 <h2 id="1-use-our-github-template-">1. Use our Github Template <i class="fa-solid fa-thumbs-up fa-xs"></i></h2>
 <p>This is the <strong>recommended option</strong>.
 Create a Github account, go to <a href="https://github.com/dieghernan/chulapa-101">chulapa-101 repo</a>, fork it and quickstart your site!</p>
 <h2 id="2-remote-theme-method">2. Remote theme method</h2>
 <p>If you prefer not to use the template, you can use the <code class="language-plaintext highlighter-rouge">jekyll-remote-theme</code> method.
 Just follow these steps:</p>
-<ul>
+<ol>
  <li>Create a new GitHub repository or go to an existing one</li>
- <li>Add this line to your <code class="language-plaintext highlighter-rouge">_config.yml</code> and make sure to remove any previous theme or remote theme parameter:</li>
-</ul>
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+ <li>
+   <p>Add this line to your <code class="language-plaintext highlighter-rouge">_config.yml</code>:</p>
+   <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 <span class="na">remote_theme</span><span class="pi">:</span> <span class="s">dieghernan/chulapa</span>
 
 <span class="nn">...</span> <span class="s">more config options</span>
-</code></pre></div></div>
-<ul>
+</code></pre></div>  </div>
+ </li>
  <li>Remove other <code class="language-plaintext highlighter-rouge">remote_theme/theme</code> instances of your <code class="language-plaintext highlighter-rouge">_config.yml</code> file.</li>
-</ul>
-<p>::: {.alert .alert-warning .p-3 .mx-2 markdown=”1”}
-<strong>Don’t forget to deploy your site:</strong></p>
-<ul>
- <li>On your Github repo, go to <em>Setting &gt; Github Pages</em> and publish your site.</li>
- <li>Add your content.
-:::</li>
-</ul>
+</ol>
+<div class="alert alert-warning p-3 mx-2">
+ <p><strong>Don’t forget to deploy your site:</strong></p>
+ <ul>
+   <li>On your Github repo, go to <em>Setting &gt; Github Pages</em> and publish your site.</li>
+   <li>Add your content.</li>
+ </ul>
+</div>
 <p>By using <code class="language-plaintext highlighter-rouge">jekyll-remote-theme</code> your repo would have remote access to the content of these folders:</p>
 <ul>
  <li><code class="language-plaintext highlighter-rouge">assets</code></li>
@@ -219,7 +219,7 @@ Just follow these steps:</p>
 </ul>
 <p>Note that making copies of theme files will prevent you from receiving any theme updates on those files.</p>
 <p>Please read the rest of the docs for further adjustments.</p>
-<h2 id="gem-based-method-">Gem-based method <i class="fa-regular fa-gem fa-xs"></i></h2>
+<h2 id="gem-based-method-">Gem-based method <i class="fa-solid fa-gem fa-xs"></i></h2>
 <p>With Gem-based themes, directories such as the <code class="language-plaintext highlighter-rouge">assets</code>, <code class="language-plaintext highlighter-rouge">_layouts</code>, <code class="language-plaintext highlighter-rouge">_includes</code>, and <code class="language-plaintext highlighter-rouge">_sass</code> are stored in the theme’s gem, hidden from your immediate view.
 This allows for easier installation and updating as you don’t have to manage any of the theme files.</p>
 <p>To install as a Gem-based theme:</p>
