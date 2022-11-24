@@ -2,7 +2,7 @@
 
 var store = [{
         "title": "<span class=\"chulapa\">Chulapa</span>",
-        "subtitle": "A full flexible Jekyll theme for Github Pages <br><span id=\"version\"> on development</span>",
+        "subtitle": "A full flexible Jekyll theme for Github Pages",
         "excerpt":
             "Latest release {{ site.github.releases[0].tag_name }} Read the docs Easy to install Create a fully responsive website hosted on Github in minutes - for free! First-class features Fontawesome, comments, internal search,...",
         "categories": null,
