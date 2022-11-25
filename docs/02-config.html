@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en-US"><head>
    <meta charset="utf-8">
-    <!-- Chulapa Jekyll Theme - v1.0.1 -->
+    <!-- Chulapa Jekyll Theme - v1.0.0 -->
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2022-11-25 09:37:21 +0100 -->
+    <!-- Page build 2022-11-25 10:45:16 +0100 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -17,8 +17,8 @@
       },
       "headline": "Global settings",
       "image": "https://dieghernan.github.io/chulapa/assets/img/site/banner-docs.png",
-      "datePublished": "2022-11-25T09:37:21+01:00",
-      "dateModified": "2022-11-25T09:37:21+01:00",
+      "datePublished": "2022-11-25T10:45:16+01:00",
+      "dateModified": "2022-11-25T10:45:16+01:00",
       "author": {
         "@type": "Person",
         "name": "dieghernan"
@@ -134,6 +134,8 @@
   gtag('js', new Date());
   gtag('config', 'UA-139034853-5');
 </script>
+
+
 <!-- start custom head snippets -->
 <!-- https://realfavicongenerator.net/-->
 <link rel="apple-touch-icon" sizes="180x180" href="https://dieghernan.github.io/chulapa/assets/favicons/apple-touch-icon.png">
@@ -204,9 +206,13 @@
  <li class="list-group-item font-weight-bold py-1 pr-0 mr-0 chulapa-toc-reset"><a href="#xx-other-settings">XX. Other settings.</a></li>
 </ul>
 			 <p class="font-weight-light font-italic lead">TL;DR</p>
+
 <p>Learn how to modify your <code class="language-plaintext highlighter-rouge">_config.yml</code> file. If you are using the remote method and you didn’t fork the <a href="https://github.com/dieghernan/chulapa-101">chulapa-101 repo</a>, you can use <a href="https://github.com/dieghernan/chulapa/blob/master/_config.yml">this file</a> as a starting point. Don’t forget to add also <code class="language-plaintext highlighter-rouge">remote_theme: dieghernan/chulapa@[version]</code> to your file.</p>
+
 <p>For some variables, a default value is provided. This value is shown at the end of the explanation <strong>on bold</strong>.</p>
+
 <h2 id="a-site-settingsseo">A. Site settings/SEO</h2>
+
 <ul>
  <li><code class="language-plaintext highlighter-rouge">locale</code>: Set the <code class="language-plaintext highlighter-rouge">lang</code> on the <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> of your site. Use the format <code class="language-plaintext highlighter-rouge">language-TERRITORY</code> , e.g fr, en-GB, es-MX, pt-BR. <strong>Default value: en-US</strong>.</li>
  <li><code class="language-plaintext highlighter-rouge">title</code>, <code class="language-plaintext highlighter-rouge">title_separator</code> and <code class="language-plaintext highlighter-rouge">subtitle</code>: Set several <code class="language-plaintext highlighter-rouge">&lt;meta&gt;</code> tags and defines the text to be displayed on top of the browsers. <strong>repository_name | project_tagline</strong>.</li>
@@ -215,8 +221,11 @@
  <li><code class="language-plaintext highlighter-rouge">words_per_minute</code>: Used for computing the reading time of the page. <strong>200</strong>.</li>
  <li><code class="language-plaintext highlighter-rouge">timezone</code>: Used for setting the timezone of your dates and hours. See <a href="https://jekyllrb.com/docs/configuration/options">Jekyll Docs</a>.</li>
 </ul>
+
 <h3 id="seo">SEO</h3>
+
 <p><strong>Search Engine Optimization</strong> is important (obviously) for any site. Some of the previous options would affect to SEO, however <span class="chulapa">Chulapa</span> has a specific focus on that:</p>
+
 <ul>
  <li><code class="language-plaintext highlighter-rouge">og_image</code>: The default image to be displayed  when a page of your site is shared on any of the major social networks (Facebook, Twitter, etc.). If <code class="language-plaintext highlighter-rouge">header_img</code> or <code class="language-plaintext highlighter-rouge">og_image</code> are set on  the front matter of a page those images would be used instead. <strong>Author avatar (if set, see below) or your Github avatar</strong>.</li>
  <li><code class="language-plaintext highlighter-rouge">twitter_site</code>: The twitter username <strong>without @!</strong> of the owner of the site. Useful when sharing on Twitter.</li>
@@ -229,6 +238,7 @@
    </ul>
  </li>
 </ul>
+
 <p>See below a full example for an <code class="language-plaintext highlighter-rouge">author</code>:</p>
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">author</span><span class="pi">:</span>
   <span class="na">name                  </span><span class="pi">:</span>      <span class="s">Name Surname Company</span>
@@ -243,17 +253,27 @@
       <span class="na">icon</span><span class="pi">:</span> <span class="s">far fa-envelope</span>
       <span class="s">...</span>
 </code></pre></div></div>
+
 <p class="alert alert-success p-3 mx-2"><strong>Your pages would look awesome on social networks</strong>: You don’t have to set anything, the theme already shipped this for you. Twitter Cards, LinkedIn Post Inspector, Facebook Validator, WhatsApp and some structured data! Every page shared would look awesome.</p>
+
 <h3 id="fontawesome">Fontawesome</h3>
+
 <p><span class="chulapa">Chulapa</span> has its own installation of Fontawesome 6, so you don’t need to set anything. However, if you want to use your own kit, jump to your Fontawesome account and grab the kitcode. Implement this kitcode after <code class="language-plaintext highlighter-rouge">fa_kit_code:</code>.</p>
+
 <p>To enable v4 support, set <code class="language-plaintext highlighter-rouge">fa_v4_support: true</code>.</p>
+
 <h3 id="google-analytics">Google Analytics</h3>
+
 <ul>
  <li><code class="language-plaintext highlighter-rouge">gtag_id</code> and <code class="language-plaintext highlighter-rouge">analytics_id</code>: Use either your gtag (recommended) or your Google Analytics tracking code. <a href="https://developers.google.com/analytics/devguides/collection/gtagjs">Learn more</a>.</li>
 </ul>
+
 <h3 id="search-engines">Search engines</h3>
+
 <p>When enabled, this theme would install an internal search capability of your site. There are three free engines available, <a href="https://lunrjs.com/">Lunr.js</a>, <a href="https://www.algolia.com/">Algolia</a> and <a href="https://developers.google.com/custom-search">Google Custom Search</a>.</p>
+
 <p>While Lunr is fully integrated on the theme, for Algolia and Google CSE you may need to create an account and perform some additional steps.</p>
+
 <ul>
  <li><code class="language-plaintext highlighter-rouge">search</code>:
    <ul>
@@ -266,7 +286,9 @@
  </li>
  <li><code class="language-plaintext highlighter-rouge">google_cse_id</code>: Your Google Custom Search id, available on <em>cse.google.com &gt; Your search engine &gt; Settings</em>.</li>
 </ul>
+
 <p>Algolia is implemented via the <code class="language-plaintext highlighter-rouge">jekyll-algolia</code> plugin <a href="https://community.algolia.com/jekyll-algolia/getting-started.html">(docs)</a>, and needs a <a href="https://community.algolia.com/jekyll-algolia/options.html">specific configuration syntax</a>, the minimal requirement are:</p>
+
 <ul>
  <li><code class="language-plaintext highlighter-rouge">algolia</code>:
    <ul>
@@ -276,7 +298,9 @@
    </ul>
  </li>
 </ul>
+
 <p>Recommended additional options are:</p>
+
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">algolia</span><span class="pi">:</span>
   <span class="na">application_id</span><span class="pi">:</span> <span class="s">your id</span>
   <span class="na">index_name</span><span class="pi">:</span> <span class="s">your name</span>
@@ -298,9 +322,13 @@
     <span class="pi">-</span> <span class="s">desc(content)</span> 
     <span class="pi">-</span> <span class="s">desc(subtitle)</span>
 </code></pre></div></div>
+
 <p>If you are deploying your site with Github Pages, I recommend using this <a href="https://github.com/marketplace/actions/algolia-jekyll-action">GitHub Action</a> to create and update your Algolia index after every commit automatically.</p>
+
 <h3 id="comments">Comments</h3>
+
 <p>You can add a comment feature to a page. Currently <a href="https://disqus.com/">Disqus</a> and <a href="https://giscus.app/">giscus</a> are supported:</p>
+
 <ul>
  <li><code class="language-plaintext highlighter-rouge">comments</code>:
    <ul>
@@ -309,11 +337,16 @@
    </ul>
  </li>
 </ul>
+
 <p>Configure <strong>giscus</strong> following their instructions and paste the resulting script on a file hosted on your GitHub repo with path <em>./_includes/custom/giscus.html</em>.</p>
+
 <h2 id="b-navigation">B. Navigation</h2>
+
 <h3 id="navbar">Navbar</h3>
 <p>Configure the navbar and footer of your site. This theme supports a two-level navigation structure, and features <strong>three different navbar styles</strong>: <code class="language-plaintext highlighter-rouge">fab</code>, as a floating action button with animation, a <strong>classic sticky-top navbar</strong> or <code class="language-plaintext highlighter-rouge">dual</code> that would display as <code class="language-plaintext highlighter-rouge">fab</code> on small devices and as a classic navbar on bigger devices.</p>
+
 <p>Check this <a href="https://dieghernan.github.io/chulapa/demo/classic-navbar">live demo</a> of the classic navbar style.</p>
+
 <ul>
  <li><code class="language-plaintext highlighter-rouge">navbar</code>:
    <ul>
@@ -330,6 +363,7 @@
    </ul>
  </li>
 </ul>
+
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">navbar</span><span class="pi">:</span>
   <span class="na">style </span><span class="pi">:</span>  <span class="s">fab</span> 
   <span class="na">brand</span><span class="pi">:</span>
@@ -349,8 +383,11 @@
     <span class="na">url</span><span class="pi">:</span> <span class="s">/url1/</span>  <span class="c1">#url</span>
      <span class="s">... more levels</span>
 </code></pre></div></div>
+
 <h3 id="footer">Footer</h3>
+
 <p>To set social links to be displayed on your footer, configure this section:</p>
+
 <ul>
  <li><code class="language-plaintext highlighter-rouge">footer</code>:
    <ul>
@@ -365,6 +402,7 @@
    </ul>
  </li>
 </ul>
+
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">footer</span><span class="pi">:</span>
   <span class="na">links</span><span class="pi">:</span>
     <span class="pi">-</span> <span class="na">label</span><span class="pi">:</span> <span class="s2">"</span><span class="s">RSS"</span>
@@ -377,21 +415,32 @@
       <span class="na">icon</span><span class="pi">:</span> <span class="s2">"</span><span class="s">fab</span><span class="nv"> </span><span class="s">fa-facebook"</span>
       <span class="na">url</span><span class="pi">:</span> <span class="s">https://www.facebook.com</span>
 </code></pre></div></div>
+
 <p>You can also customize the copyright on the footer:</p>
+
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">footer</span><span class="pi">:</span>
   <span class="na">copyright</span><span class="pi">:</span> <span class="s2">"</span><span class="s">&amp;copy;</span><span class="nv"> </span><span class="s">2021</span><span class="nv"> </span><span class="s">&lt;span</span><span class="nv"> </span><span class="s">class='chulapa'&gt;Chulapa&lt;/span&gt;</span><span class="nv"> </span><span class="s">developers"</span>
 </code></pre></div></div>
+
 <h2 id="theming"> C. Theming <span class="chulapa">Chulapa</span></h2>
+
 <p>This is the core feature of <span class="chulapa">Chulapa</span>, please find the full reference <a href="./03-theming">here</a>, or just navigate to the next page.</p>
+
 <h2 id="d-jekyll-defaults-and-collections">D. Jekyll Defaults and collections</h2>
+
 <p>Please refer to Jekyll Documentation  on <a href="https://jekyllrb.com/docs/step-by-step/09-collections/">Collections</a>, <a href="https://jekyllrb.com/docs/pagination/#enable-pagination">Pagination</a> and <a href="https://jekyllrb.com/docs/configuration/front-matter-defaults/">Front Matter Defaults</a>, as this part would depend on the purpose and setup of your site.</p>
+
 <p>The only specific parameter of <span class="chulapa">Chulapa</span> on this section is:</p>
 <ul>
  <li><code class="language-plaintext highlighter-rouge">paginator_maxnum</code>: This parameter would affect only if you are using the <a href="https://github.com/dieghernan/chulapa/blob/master/docs/blog/index.html"><span class="chulapa">Chulapa</span> template for pagination</a>. This parameter would define the maximum number of pagination elements to be shown. <strong>3</strong>.</li>
 </ul>
+
 <p>Have a look to a potential Default configuration <a href="https://dieghernan.github.io/chulapa/docs/04-layouts#a-note-on-defaults">here</a>.</p>
+
 <h2 id="xx-other-settings">XX. Other settings.</h2>
+
 <p>You don’t need to modify anything on that section, but obviously you can.</p>
+
 </article>
 		</div>
 	</main><nav aria-label="Navigation" class="container-lg chulapa-pagination  ">
@@ -413,6 +462,7 @@
          <div class="row">
            <div class="col-lg-8 offset-lg-2">
          <!-- Include the script from  https://giscus.app/ -->
+
 <script src="https://giscus.app/client.js"
         data-repo="dieghernan/chulapa"
         data-repo-id="MDEwOlJlcG9zaXRvcnkyNTQ0NjMyOTg="
@@ -464,3 +514,4 @@
 	<!-- start custom scripts to be placed at the bottom of the page -->
 <!-- end custom bottom scripts -->
 	</body>
+</html>

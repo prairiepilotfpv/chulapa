@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en-US"><head>
    <meta charset="utf-8">
-    <!-- Chulapa Jekyll Theme - v1.0.1 -->
+    <!-- Chulapa Jekyll Theme - v1.0.0 -->
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2022-11-25 09:37:21 +0100 -->
+    <!-- Page build 2022-11-25 10:45:16 +0100 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -17,8 +17,8 @@
       },
       "headline": "Markdown cheatsheet",
       "image": "https://dieghernan.github.io/chulapa/assets/img/site/banner-docs.png",
-      "datePublished": "2022-11-25T09:37:21+01:00",
-      "dateModified": "2022-11-25T09:37:21+01:00",
+      "datePublished": "2022-11-25T10:45:16+01:00",
+      "dateModified": "2022-11-25T10:45:16+01:00",
       "author": {
         "@type": "Person",
         "name": "dieghernan"
@@ -134,6 +134,8 @@
   gtag('js', new Date());
   gtag('config', 'UA-139034853-5');
 </script>
+
+
 <!-- start custom head snippets -->
 <!-- https://realfavicongenerator.net/-->
 <link rel="apple-touch-icon" sizes="180x180" href="https://dieghernan.github.io/chulapa/assets/favicons/apple-touch-icon.png">
@@ -203,21 +205,32 @@
  <li class="list-group-item font-weight-bold py-1 pr-0 mr-0 chulapa-toc-reset"><a href="#headers-work-too">Headers work too</a></li>
 </ul>
 			 <h2 id="whats-markdown">What’s Markdown?</h2>
+
 <p>Markdown is a lightweight markup language that you can use to add formatting elements to plaintext text documents. Created by <a href="https://daringfireball.net/projects/markdown/">John Gruber</a> in 2004, Markdown is now one of the world’s most popular markup languages.</p>
+
 <p><a href="https://www.markdownguide.org/basic-syntax/">https://www.markdownguide.org/basic-syntax/</a></p>
+
 <h2 id="markdown-cheatsheet">Markdown cheatsheet</h2>
+
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Text can be <span class="gs">**bold**</span>, _italic_, or ~~strikethrough~~.
 </code></pre></div></div>
+
 <p>Text can be <strong>bold</strong>, <em>italic</em>, or <del>strikethrough</del>.</p>
+
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nv">Link to another page</span><span class="p">](</span><span class="sx">./another-page.html</span><span class="p">)</span>.
 </code></pre></div></div>
+
 <p><a href="./another-page.html">Link to another page</a>.</p>
+
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>There should be whitespace between this paragraph
 
 and this paragraph.
 </code></pre></div></div>
+
 <p>There should be whitespace between this paragraph</p>
+
 <p>and this paragraph.</p>
+
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># Header 1</span>
 
 <span class="gu">## Header 2</span>
@@ -230,20 +243,30 @@ and this paragraph.
 
 <span class="gu">###### Header 6</span>
 </code></pre></div></div>
+
 <h1 id="header-1">Header 1</h1>
+
 <h2 id="header-2">Header 2</h2>
+
 <h3 id="header-3">Header 3</h3>
+
 <h4 id="header-4">Header 4</h4>
+
 <h5 id="header-5">Header 5</h5>
+
 <h6 id="header-6">Header 6</h6>
+
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; This is a blockquote following a header.</span>
 <span class="gt">&gt;</span>
 <span class="gt">&gt; When something is important enough, you do it even if the odds are not in your favor.</span>
 </code></pre></div></div>
+
 <blockquote>
  <p>This is a blockquote.</p>
+
  <p>When something is important enough, you do it even if the odds are not in your favor.</p>
 </blockquote>
+
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">```</span><span class="nl">js
 </span><span class="c1">// Javascript code with syntax highlighting.</span>
 <span class="kd">var</span> <span class="nx">fun</span> <span class="o">=</span> <span class="kd">function</span> <span class="nx">lang</span><span class="p">(</span><span class="nx">l</span><span class="p">)</span> <span class="p">{</span>
@@ -272,17 +295,20 @@ and this paragraph.
 <span class="nt">&lt;/html&gt;</span>
 <span class="p">```</span>
 </code></pre></div></div>
+
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Javascript code with syntax highlighting.</span>
 <span class="kd">var</span> <span class="nx">fun</span> <span class="o">=</span> <span class="kd">function</span> <span class="nx">lang</span><span class="p">(</span><span class="nx">l</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">dateformat</span><span class="p">.</span><span class="nx">i18n</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">./lang/</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">l</span><span class="p">)</span>
   <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
+
 <div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Ruby code with syntax highlighting</span>
 <span class="no">GitHubPages</span><span class="o">::</span><span class="no">Dependencies</span><span class="p">.</span><span class="nf">gems</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">gem</span><span class="p">,</span> <span class="n">version</span><span class="o">|</span>
   <span class="n">s</span><span class="p">.</span><span class="nf">add_dependency</span><span class="p">(</span><span class="n">gem</span><span class="p">,</span> <span class="s2">"= </span><span class="si">#{</span><span class="n">version</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 <span class="k">end</span>
 </code></pre></div></div>
+
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!--HTML code syntax highlighter--&gt;</span>
 <span class="cp">&lt;!DOCTYPE html&gt;</span>
 <span class="nt">&lt;html&gt;</span>
@@ -294,6 +320,7 @@ and this paragraph.
 <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
+
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">*</span> This is an unordered list.
 <span class="p">*</span> This is an unordered list.
 <span class="p">*</span> This is an unordered list.
@@ -326,12 +353,15 @@ And a task list:
 <span class="p">-</span> [ ] This is an incomplete item
 
 </code></pre></div></div>
+
 <ul>
  <li>This is an unordered list.</li>
  <li>This is an unordered list.</li>
  <li>This is an unordered list.</li>
 </ul>
+
 <p>An a two-level ordered list:</p>
+
 <ol>
  <li>This is an ordered list.</li>
  <li>This is an ordered list.
@@ -343,11 +373,15 @@ And a task list:
  <li>Actual numbers don’t matter, just that it’s a numbet or not.</li>
  <li>
    <p>And another item.</p>
+
    <p>You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces.</p>
+
    <h1 id="and-a-header">And a header</h1>
  </li>
 </ol>
+
 <p>Unordered list can use asterisks:</p>
+
 <ul>
  <li>Like this</li>
  <li>Or minuses
@@ -365,25 +399,33 @@ And a task list:
    </ul>
  </li>
 </ul>
+
 <p>And a task list:</p>
+
 <ul class="task-list">
  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />This is a complete item</li>
  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />This is an incomplete item</li>
 </ul>
+
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 Use an emoji here: 👍🏻⭐️🏆
 
 </code></pre></div></div>
+
 <p>Use an emoji here: 👍🏻⭐️🏆</p>
+
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>To quickly turn a URL or email address into a link, enclose it in angle brackets.
 
 <span class="nv">&lt;https://www.markdownguide.org&gt;</span>
 <span class="nv">&lt;fake@example.com&gt;</span>
 
 </code></pre></div></div>
+
 <p>To quickly turn a URL or email address into a link, enclose it in angle brackets.</p>
+
 <p><a href="https://www.markdownguide.org">https://www.markdownguide.org</a>
 <a href="mailto:fake@example.com">fake@example.com</a></p>
+
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 
 <span class="p">[</span><span class="ss">^1</span><span class="p">]:</span> <span class="sx">This</span> is the first footnote.
@@ -396,7 +438,9 @@ Use an emoji here: 👍🏻⭐️🏆
 
     Add as many paragraphs as you like.
 </span></code></pre></div></div>
+
 <p>Here’s a simple footnote,<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> and here’s a longer one.<sup id="fnref:bignote" role="doc-noteref"><a href="#fn:bignote" class="footnote" rel="footnote">2</a></sup></p>
+
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 A table
 
@@ -408,7 +452,9 @@ A table
 | 4      | Fechin   | 18      | M          |
 
 </code></pre></div></div>
+
 <p>A table</p>
+
 <table>
 <thead>
    <tr>
@@ -445,6 +491,7 @@ A table
    </tr>
  </tbody>
 </table>
+
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>There's a horizontal rule below this.
 <span class="p">
 * * *
@@ -453,10 +500,15 @@ Another
 <span class="p">
 ---
 </span></code></pre></div></div>
+
 <p>There’s a horizontal rule below this.</p>
+
 <hr />
+
 <p>Another</p>
+
 <hr />
+
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gs">**Small image**</span>
 
 <span class="p">![</span><span class="nv">Octocat</span><span class="p">](</span><span class="sx">https://github.githubassets.com/images/icons/emoji/octocat.png</span><span class="p">)</span>
@@ -465,11 +517,17 @@ Another
 
 <span class="p">![</span><span class="nv">Branching</span><span class="p">](</span><span class="sx">https://guides.github.com/activities/hello-world/branching.png</span><span class="p">)</span>
 </code></pre></div></div>
+
 <p><strong>Small image</strong></p>
+
 <p><img src="https://github.githubassets.com/images/icons/emoji/octocat.png" alt="Octocat" /></p>
+
 <p><strong>Large image</strong></p>
+
 <p><img src="https://picsum.photos/id/36/1200/600.jpg" alt="Branching" /></p>
+
 <h3 id="definition-lists-can-be-used-with-html-syntax">Definition lists can be used with <abbr title="Hyper Text Markup Language">HTML</abbr> syntax.</h3>
+
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;dl&gt;</span>
 <span class="nt">&lt;dt&gt;</span>Name<span class="nt">&lt;/dt&gt;</span>
 <span class="nt">&lt;dd&gt;</span>Godzilla<span class="nt">&lt;/dd&gt;</span>
@@ -481,6 +539,7 @@ Another
 <span class="nt">&lt;dd&gt;</span>Green<span class="nt">&lt;/dd&gt;</span>
 <span class="nt">&lt;/dl&gt;</span>
 </code></pre></div></div>
+
 <dl>
 <dt>Name</dt>
 <dd>Godzilla</dd>
@@ -491,13 +550,20 @@ Another
 <dt>Color</dt>
 <dd>Green</dd>
 </dl>
+
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
 </code></pre></div></div>
+
 <hr />
+
 <h2 id="whats-kramdown">What’s kramdown?</h2>
+
 <p><strong>kramdown</strong> supercharges Markdown with some interesting features.</p>
+
 <p><strong>kramdown</strong> is the default Jekyll Markdown processor. When creating your site with Jekyll, you can use the standard Markdown syntax plus some specific <strong>kramdown</strong> syntax. Jekyll would render your Markdown/<strong>kramdown</strong> into <abbr title="Hyper Text Markup Language">HTML</abbr>.</p>
+
 <p><a href="https://kramdown.gettalong.org/quickref.html">https://kramdown.gettalong.org/quickref.html</a></p>
+
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The first paragraph.
 
 Another paragraph
@@ -524,39 +590,59 @@ which contains a hard line break.
 <span class="gu">###### H6 header</span>
 
 </code></pre></div></div>
+
 <p>The first paragraph.</p>
+
 <p>Another paragraph</p>
+
 <p>This is a paragraph<br />
 which contains a hard line break.</p>
+
 <h1 id="first-level-header">First level header</h1>
+
 <h2 id="second-level-header">Second level header</h2>
+
 <h1 id="h1-header">H1 header</h1>
+
 <h2 id="h2-header">H2 header</h2>
+
 <h3 id="h3-header">H3 header</h3>
+
 <h4 id="h4-header">H4 header</h4>
+
 <h5 id="h5-header">H5 header</h5>
+
 <h6 id="h6-header">H6 header</h6>
+
 <h2 id="create-a-table-of-contents">Create a table of contents:</h2>
+
 <p>On your <code class="language-plaintext highlighter-rouge">_config.yaml</code>, define the levels of your toc:</p>
+
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">kramdown</span><span class="pi">:</span>
   <span class="s">...</span>
-  <span class="s">toc_levels</span><span class="pi">:</span> <span class="s">2..6</span>
+  <span class="s">toc_levels</span><span class="err">:</span> <span class="s">2..6</span>
 
 </code></pre></div></div>
+
 <p>Ignore specific headers:</p>
+
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 <span class="gu">## This header would be ignored on the toc.</span>
 {:.no_toc}
 
 </code></pre></div></div>
+
 <h3 class="no_toc" id="this-header-would-be-ignored-on-the-toc">This header would be ignored on the toc.</h3>
+
 <p>Add this to generate table</p>
+
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">
 *</span> This line is needed, but won't appear. Replace '<span class="err">*</span>' with '1' to create a numbered list.
 {:toc}<span class="sb">
 
 
 </span></code></pre></div></div>
+
 <ul id="markdown-toc">
  <li><a href="#whats-markdown" id="markdown-toc-whats-markdown">What’s Markdown?</a></li>
  <li><a href="#markdown-cheatsheet" id="markdown-toc-markdown-cheatsheet">Markdown cheatsheet</a></li>
@@ -592,6 +678,7 @@ which contains a hard line break.</p>
  <li><a href="#create-a-table-of-contents" id="markdown-toc-create-a-table-of-contents">Create a table of contents:</a></li>
  <li><a href="#headers-work-too" id="markdown-toc-headers-work-too">Headers work too</a></li>
 </ul>
+
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; A sample blockquote.</span>
 <span class="gt">&gt;</span>
 <span class="gt">&gt; &gt;Nested blockquotes are</span>
@@ -611,13 +698,16 @@ and another term
 </code></pre></div></div>
 <blockquote>
  <p>A sample blockquote.</p>
+
  <blockquote>
    <p>Nested blockquotes are
 also possible.</p>
  </blockquote>
+
  <h2 id="headers-work-too">Headers work too</h2>
  <p>This is the outer quote again.</p>
 </blockquote>
+
 <dl>
  <dt>term</dt>
  <dd>definition</dd>
@@ -626,6 +716,7 @@ also possible.</p>
  <dt>and another term</dt>
  <dd>and a definition for the term</dd>
 </dl>
+
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| Header1 | Header2 | Header3 |
 |:--------|:-------:|--------:|
 | cell1   | cell2   | cell3   |
@@ -638,6 +729,7 @@ also possible.</p>
 {: rules="groups"}
 
 </code></pre></div></div>
+
 <table rules="groups">
 <thead>
    <tr>
@@ -678,6 +770,7 @@ also possible.</p>
    </tr>
  </tfoot>
 </table>
+
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This is a paragraph
 {::comment}
 This is a comment which is
@@ -691,16 +784,20 @@ This is a paragraph … paragraph continues here.
 
 Extensions can also be used inline <span class="gs">**see**</span>!
 </code></pre></div></div>
+
 <p>This is a paragraph
 <!-- 
 This is a comment which is
 completely ignored.
  -->
 … paragraph continues here.</p>
+
 <p>Extensions can also be used
 inline **see**!
 This is a paragraph … paragraph continues here.</p>
+
 <p>Extensions can also be used inline <strong>see</strong>!</p>
+
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>A <span class="p">[</span><span class="nv">link</span><span class="p">](</span><span class="sx">http://kramdown.gettalong.org</span> <span class="nn">"hp"</span><span class="p">)</span>
 to the homepage.
 
@@ -721,14 +818,20 @@ example.
 
 </span>This is <span class="gs">**Chulapa**</span>{:.chulapa} <span class="ge">*red*</span>{: style="color: red"}.
 </code></pre></div></div>
+
 <p>A <a href="http://kramdown.gettalong.org" title="hp">link</a>
 to the homepage.</p>
+
 <p id="myid" class="alert alert-info p-3 mx-2">A simple info alert <strong>check it out!</strong></p>
+
 <p>This is a text with a
 footnote<sup id="fnref:1:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
+
 <p>This is an <abbr title="Hyper Text Markup Language">HTML</abbr>
 example.</p>
+
 <p>This is <strong class="chulapa">Chulapa</strong> <em style="color: red">red</em>.</p>
+
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">markdown=</span><span class="s">"1"</span><span class="nt">&gt;</span>This is the first part of a para,
 which is continued here.
 <span class="p">-</span>  List
@@ -736,6 +839,7 @@ which is continued here.
 <span class="nt">&lt;/div&gt;</span>
 
 </code></pre></div></div>
+
 <div>
  <p>This is the first part of a para,
 which is continued here.</p>
@@ -744,6 +848,7 @@ which is continued here.</p>
    <li>List <strong>bold</strong></li>
  </ul>
 </div>
+
 <div class="footnotes" role="doc-endnotes">
  <ol>
    <li id="fn:1" role="doc-endnote">
@@ -751,8 +856,11 @@ which is continued here.</p>
    </li>
    <li id="fn:bignote" role="doc-endnote">
      <p>Here’s one with multiple paragraphs and code.</p>
+
      <p>Indent paragraphs to include them in the footnote.</p>
+
      <p><code class="language-plaintext highlighter-rouge">{ my code }</code></p>
+
      <p>Add as many paragraphs as you like. <a href="#fnref:bignote" class="reversefootnote" role="doc-backlink">&uarr;</a></p>
    </li>
  </ol>
@@ -778,6 +886,7 @@ which is continued here.</p>
          <div class="row">
            <div class="col-lg-8 offset-lg-2">
          <!-- Include the script from  https://giscus.app/ -->
+
 <script src="https://giscus.app/client.js"
         data-repo="dieghernan/chulapa"
         data-repo-id="MDEwOlJlcG9zaXRvcnkyNTQ0NjMyOTg="
@@ -829,3 +938,4 @@ which is continued here.</p>
 	<!-- start custom scripts to be placed at the bottom of the page -->
 <!-- end custom bottom scripts -->
 	</body>
+</html>
