@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en-US"><head>
    <meta charset="utf-8">
-    <!-- Chulapa Jekyll Theme - v1.0.0 -->
+    <!-- Chulapa Jekyll Theme - v1.0.1 -->
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2022-11-26 01:33:03 +0100 -->
+    <!-- Page build 2022-11-26 09:40:58 +0100 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -17,8 +17,8 @@
       },
       "headline": "Syntax highlighting demo",
       "image": "https://dieghernan.github.io/chulapa/assets/img/site/banner-docs.png",
-      "datePublished": "2022-11-26T01:33:03+01:00",
-      "dateModified": "2022-11-26T01:33:03+01:00",
+      "datePublished": "2022-11-26T09:40:58+01:00",
+      "dateModified": "2022-11-26T09:40:58+01:00",
       "author": {
         "@type": "Person",
         "name": "dieghernan"
@@ -139,8 +139,6 @@ theme. Just make your..."/>
   gtag('js', new Date());
   gtag('config', 'UA-139034853-5');
 </script>
-
-
 <!-- start custom head snippets -->
 <!-- https://realfavicongenerator.net/-->
 <link rel="apple-touch-icon" sizes="180x180" href="https://dieghernan.github.io/chulapa/assets/favicons/apple-touch-icon.png">
@@ -191,24 +189,19 @@ theme. Just make your..."/>
 			<aside class="col-lg-2 mt-lg-3 small"></aside>
 			<article class="col-lg-8 mt-3">
 			<p>This page is a demo of the different styles of syntax highlighting shipped by default with this theme. Just make your selection below.</p>
-
 <p id="count" class="lead mb-2"></p>
-
 <div class="dropdown my-4">
   <button class="btn btn-sm btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Theme</button>
  <div id="list" class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="max-height: 30vh;overflow-y: auto;">
  </div>
 </div>
-
 <p><span id="config">None</span></p>
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">chulapa-skin</span><span class="pi">:</span> <br /><span class="na">  highlight</span><span class="pi">:</span>  <span class="s" id="selected"></span></code></pre></div></div>
-
 <script>
   var styles = ['autumn', 'borland', 'bw', 'colorful',  'cran','default', 'dracula', 'emacs',
   	'friendly', 'fruity', 'github', 'gruvbox.light', 'manni', 'monokai', 'murphy','native',
   	'pastie','perldoc','skeletor', 'tango','thankful_eyes', 'trac','vim','vs','zenburn'
   ].sort();
-  
   styles.forEach(function(word) {
   	var row = document.createElement('a');
   	row.classList.add('dropdown-item');
@@ -218,31 +211,20 @@ theme. Just make your..."/>
   	document.getElementById('list').appendChild(row);
   });
   document.getElementById("count").innerHTML = "An overall of <span class='font-weight-bold'>" + styles.length + "</span> highlighting styles available";
-  
   var csshigh = document.getElementById("csshigh");
-  	
   	function reaplyStyles(themename){
   		csshigh.href = 'https://dieghernan.github.io/chulapa/assets/css/highlighter/'+themename+'.css';
-  		
   		title = document.getElementById("config");
-  		
   		title.innerHTML = 'On your <code>_config.yml</code>';		
-  		
   		sel = document.getElementById("selected");  	
   		sel.innerHTML = themename;
   		btn = document.getElementById("dropdownMenuButton");  	
   		btn.innerHTML = themename;
-  		
       return true;
   }
-  
-  
-  
 </script>
-
 <div>
  <h4 id="python">Python</h4>
-
  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">@</span><span class="n">requires_authorization</span>
 <span class="k">def</span> <span class="nf">somefunc</span><span class="p">(</span><span class="n">param1</span><span class="o">=</span><span class="s">''</span><span class="p">,</span> <span class="n">param2</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
     <span class="sa">r</span><span class="s">'''A docstring'''</span>
@@ -257,9 +239,7 @@ theme. Just make your..."/>
 ... prompt'''</span>
 
 </code></pre></div></div>
-
  <h4 id="javascript">Javascript</h4>
-
  <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">$initHighlight</span><span class="p">(</span><span class="nx">block</span><span class="p">,</span> <span class="nx">cls</span><span class="p">)</span> <span class="p">{</span>
   <span class="k">try</span> <span class="p">{</span>
     <span class="k">if</span> <span class="p">(</span><span class="nx">cls</span><span class="p">.</span><span class="nx">search</span><span class="p">(</span><span class="sr">/</span><span class="se">\b</span><span class="sr">no</span><span class="se">\-</span><span class="sr">highlight</span><span class="se">\b</span><span class="sr">/</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
@@ -282,9 +262,7 @@ theme. Just make your..."/>
 
 <span class="k">export</span>  <span class="nx">$initHighlight</span><span class="p">;</span>
 </code></pre></div></div>
-
  <h4 id="java">Java</h4>
-
  <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 <span class="cm">/**
  * @author John Smith &lt;john.smith@example.com&gt;
@@ -304,9 +282,7 @@ theme. Just make your..."/>
 <span class="o">}</span>
 
 </code></pre></div></div>
-
  <h4 id="c">C#</h4>
-
  <div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="nn">System.IO.Compression</span><span class="p">;</span>
 
 <span class="cp">#pragma warning disable 414, 3021
@@ -324,9 +300,7 @@ theme. Just make your..."/>
     <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div></div>
-
  <h4 id="go">Go</h4>
-
  <div class="language-go highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">package</span> <span class="n">main</span>
 
 <span class="k">import</span> <span class="s">"fmt"</span>
@@ -341,9 +315,7 @@ theme. Just make your..."/>
 <span class="p">}</span>
 
 </code></pre></div></div>
-
  <h4 id="html">HTML</h4>
-
  <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
   <span class="nt">&lt;head&gt;&lt;title&gt;</span>Title!<span class="nt">&lt;/title&gt;&lt;/head&gt;</span>
   <span class="nt">&lt;body&gt;</span>
@@ -354,9 +326,7 @@ theme. Just make your..."/>
 <span class="nt">&lt;/html&gt;</span>
 
 </code></pre></div></div>
-
  <h4 id="r">R</h4>
-
  <div class="language-r highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">library</span><span class="p">(</span><span class="s2">"sf"</span><span class="p">)</span><span class="w">
 </span><span class="n">dbenford</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="k">function</span><span class="p">(</span><span class="n">x</span><span class="p">){</span><span class="w">
     </span><span class="n">log10</span><span class="p">(</span><span class="m">1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="m">1</span><span class="o">/</span><span class="n">x</span><span class="p">)</span><span class="w">
@@ -370,7 +340,6 @@ theme. Just make your..."/>
 </span><span class="n">plot</span><span class="p">(</span><span class="n">st_geometry</span><span class="p">(</span><span class="n">example</span><span class="p">),</span><span class="w"> </span><span class="n">col</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"red"</span><span class="p">)</span><span class="w">
 
 </span></code></pre></div></div>
-
 </div>
 </article>
 		</div>
@@ -393,7 +362,6 @@ theme. Just make your..."/>
          <div class="row">
            <div class="col-lg-8 offset-lg-2">
          <!-- Include the script from  https://giscus.app/ -->
-
 <script src="https://giscus.app/client.js"
         data-repo="dieghernan/chulapa"
         data-repo-id="MDEwOlJlcG9zaXRvcnkyNTQ0NjMyOTg="
@@ -445,4 +413,3 @@ theme. Just make your..."/>
 	<!-- start custom scripts to be placed at the bottom of the page -->
 <!-- end custom bottom scripts -->
 	</body>
-</html>
