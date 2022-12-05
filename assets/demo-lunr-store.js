@@ -131,7 +131,7 @@ var store = [{
         "url": "https://dieghernan.github.io/chulapa/docs/01-install",
         "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-docs.png"
       },{
-        "title": "Global settings",
+        "title": "Theme global settings",
         "subtitle": "Learn how to set up your new site",
         "excerpt":
             "TL;DR Learn how to modify your _config.yml file. If you are using the remote method and you didn’t fork the chulapa-101 repo, you can use this file as a starting...",
