@@ -18,7 +18,7 @@ var store = [{
         "categories": [],
         "date": "2020-05-15",
         "tags": ["news","bootstrap","jekyll"],
-        "url": "https://dieghernan.github.io/chulapa/20200515_welcome/",
+        "url": "https://dieghernan.github.io/chulapa/blog/20200515_welcome",
         "img": "https://dieghernan.github.io/chulapa/assets/img/site/chulapa-madrid.jpg"
       },{
         "title": "Plain page",
@@ -131,7 +131,7 @@ var store = [{
         "url": "https://dieghernan.github.io/chulapa/docs/01-install",
         "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-docs.png"
       },{
-        "title": "Theme global settings",
+        "title": "Global settings",
         "subtitle": "Learn how to set up your new site",
         "excerpt":
             "TL;DR Learn how to modify your _config.yml file. If you are using the remote method and you didn’t fork the chulapa-101 repo, you can use this file as a starting...",
