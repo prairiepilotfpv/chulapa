@@ -57,7 +57,7 @@ var store = [{
             "This page shows the hero header with an image with the landingpage layout. --- layout: landingpage title: Landing page subtitle: First impression is the last impression categories: [demo, landingpage] header_type:...",
         "categories": ["demo","landingpage"],
         "date": "2020-01-04",
-        "tags": ["layout-landingpage","header-hero","social-links","tags","categories","bottom-navs","date","comments","image","author"],
+        "tags": ["related","layout-landingpage","header-hero","social-links","tags","categories","bottom-navs","date","comments","image","author"],
         "url": "https://dieghernan.github.io/chulapa/demo/05-landinghero",
         "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-demos.png"
       },{
