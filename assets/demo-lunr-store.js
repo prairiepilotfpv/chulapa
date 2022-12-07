@@ -121,6 +121,16 @@ var store = [{
         "url": "https://dieghernan.github.io/chulapa/demo/10-plainpage-notags",
         "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-demos.png"
       },{
+        "title": "Related",
+        "subtitle": null,
+        "excerpt":
+            "This page shows the related snippet. See how related pages appeared on the bottom. --- title: Related categories: [demo] header_type: post tags: [layout-default,header-post, social-links, tags, categories, bottom-navs, author, date, related]...",
+        "categories": ["demo"],
+        "date": "2022-12-01",
+        "tags": ["layout-default","header-post","social-links","tags","categories","bottom-navs","author","date","related"],
+        "url": "https://dieghernan.github.io/chulapa/demo/11-related",
+        "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-demos.png"
+      },{
         "title": "Installation",
         "subtitle": "How to use <span class=\"chulapa\">Chulapa</span>",
         "excerpt":
@@ -189,15 +199,5 @@ var store = [{
         "date": "2022-12-07",
         "tags": [],
         "url": "https://dieghernan.github.io/chulapa/docs/markdown-cheatsheet",
-        "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-docs.png"
-      },{
-        "title": "Variables dictionary",
-        "subtitle": null,
-        "excerpt":
-            "This page shows all the Chulapa variables that you can use for theming your site. Additionally, some useful variables from Bootstrap are already listed. Chulapa-specific variables vars Description navbar-chulapa-bg-color Navbar...",
-        "categories": [],
-        "date": "2022-12-07",
-        "tags": [],
-        "url": "https://dieghernan.github.io/chulapa/docs/variable-dictionary",
         "img": "https://dieghernan.github.io/chulapa/assets/img/site/banner-docs.png"
       }]
