@@ -5,7 +5,7 @@
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2022-12-11 19:40:34 +0100 -->
+    <!-- Page build 2022-12-11 21:54:21 +0100 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -17,8 +17,8 @@
       },
       "headline": "Theming Chulapa",
       "image": "https://dieghernan.github.io/chulapa/assets/img/site/banner-docs.png",
-      "datePublished": "2022-12-11T19:40:34+01:00",
-      "dateModified": "2022-12-11T19:40:34+01:00",
+      "datePublished": "2022-12-11T21:54:21+01:00",
+      "dateModified": "2022-12-11T21:54:21+01:00",
       "author": {
         "@type": "Person",
         "name": "dieghernan"
@@ -187,6 +187,19 @@
 		<div class="row pt-2">
 			<aside class="col-lg-2 mt-lg-3 small"></aside>
 			<article id="maincontent" class="col-lg-8 mt-3">
+	<button class="btn btn-primary btn-sm rounded-right position-fixed chulapa-btn-sidebar bs-canvas-anim chulapa-btn-nofocus chulapa-fa-static" id='demo' onclick="openSideBar()" aria-label="Open Sidebar" aria-expanded="false" aria-controls="sideBar">
+		<i class="fa-solid fa-plus"></i><span class="sr-only">Open Sidebar</span>
+	</button>
+	<div class="bs-canvas bs-canvas-anim bs-canvas-left position-fixed navbar-chulapa h-100" id='sideBar'>
+		<p class="pt-2 pb-1 px-3">
+			<button type="button" class="navbar-text close chulapa-btn-nofocus chulapa-fa-static" aria-label="Close" onclick="closeSideBar()">
+				<i class="fa-solid fa-times"></i><span class="sr-only">Close Sidebar</span>
+			</button>
+		</p>
+		<nav class="navbar-nav px-3 my-auto">		  <p class="mb-2" ><a class="nav-link font-weight-bold lead" href="#">Theming <span class="chulapa">Chulapa</span></a></p>		
+			<ul class="nav flex-column" id="sidetoc"><li class="nav-item nav d-block"><a href="#load-google-fonts" class="nav-link">Load Google Fonts</a></li><li class="nav-item nav d-block"><a href="#code-highlighting" class="nav-link">Code highlighting</a></li><li class="nav-item nav d-block"><a href="#skins" class="nav-link">Skins</a></li><li class="nav-item nav d-block"><a href="#autothemer" class="nav-link">Autothemer</a></li><li class="nav-item nav d-block"><a href="#variables" class="nav-link">Variables</a></li><li class="nav-item nav d-block"><a href="#tool" class="nav-link"><span class="chulapa">Chulapa</span> theming tool</a><ul><li class="nav-item nav d-block"><a href="#step-by-step-example" class="nav-link">Step-by-step example</a><ul><li class="nav-item nav d-block"><a href="#1-on-the-tool" class="nav-link">1. On the tool</a></li><li class="nav-item nav d-block"><a href="#step-2" class="nav-link">2. On your<code> _config.yml</code></a></li></ul></li><li class="nav-item nav d-block"><a href="#using-autothemer-on-codeply" class="nav-link">Using Autothemer on Codeply</a></li></ul></li><li class="nav-item nav d-block"><a href="#themestrapp" class="nav-link">Themestr.app</a></li></ul>
+		</nav>   
+	</div>
             <nav aria-label="table-of-contents">
 			<ul class="chulapa-toc-wrapper list-group mb-5 mx-3 mx-lg-5" id="toc"><li class="list-group-item font-weight-bold py-1 pr-0 mr-0 chulapa-toc-reset"><a href="#load-google-fonts">Load Google Fonts</a></li><li class="list-group-item font-weight-bold py-1 pr-0 mr-0 chulapa-toc-reset"><a href="#code-highlighting">Code highlighting</a></li><li class="list-group-item font-weight-bold py-1 pr-0 mr-0 chulapa-toc-reset"><a href="#skins">Skins</a></li><li class="list-group-item font-weight-bold py-1 pr-0 mr-0 chulapa-toc-reset"><a href="#autothemer">Autothemer</a></li><li class="list-group-item font-weight-bold py-1 pr-0 mr-0 chulapa-toc-reset"><a href="#variables">Variables</a></li><li class="list-group-item font-weight-bold py-1 pr-0 mr-0 chulapa-toc-reset"><a href="#tool"><span class="chulapa">Chulapa</span> theming tool</a><ul><li class="list-group-item font-weight-bold py-1 pr-0 mr-0 chulapa-toc-reset"><a href="#step-by-step-example">Step-by-step example</a><ul><li class="list-group-item font-weight-bold py-1 pr-0 mr-0 chulapa-toc-reset"><a href="#1-on-the-tool">1. On the tool</a></li><li class="list-group-item font-weight-bold py-1 pr-0 mr-0 chulapa-toc-reset"><a href="#step-2">2. On your<code> _config.yml</code></a></li></ul></li><li class="list-group-item font-weight-bold py-1 pr-0 mr-0 chulapa-toc-reset"><a href="#using-autothemer-on-codeply">Using Autothemer on Codeply</a></li></ul></li><li class="list-group-item font-weight-bold py-1 pr-0 mr-0 chulapa-toc-reset"><a href="#themestrapp">Themestr.app</a></li></ul>
 			</nav>
