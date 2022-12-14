@@ -5,7 +5,7 @@
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2022-12-14 22:47:41 +0100 -->
+    <!-- Page build 2022-12-14 23:05:34 +0100 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -17,8 +17,8 @@
       },
       "headline": "Global settings",
       "image": "https://dieghernan.github.io/chulapa/assets/img/site/banner-docs.png",
-      "datePublished": "2022-12-14T22:47:41+01:00",
-      "dateModified": "2022-12-14T22:47:41+01:00",
+      "datePublished": "2022-12-14T23:05:34+01:00",
+      "dateModified": "2022-12-14T23:05:34+01:00",
       "author": {
         "@type": "Person",
         "name": "dieghernan"
@@ -316,13 +316,21 @@
 </code></pre></div></div>
 <p>If you are deploying your site with Github Pages, I recommend using this <a href="https://github.com/marketplace/actions/algolia-jekyll-action">GitHub Action</a> to create and update your Algolia index after every commit automatically.</p>
 <h3 id="comments">Comments</h3>
-<p>You can add a comment feature to a page. Currently <a href="https://disqus.com/">Disqus</a>,
-<a href="https://giscus.app/">giscus</a> and <a href="https://cactus.chat/">Cactus</a> are supported:</p>
+<p>You can add a comment feature to a page. Currently the following services are supported:</p>
 <ul>
+ <li><a href="https://disqus.com/">Disqus</a>, one of the most known comment providers for static sites,</li>
+ <li><a href="https://cusdis.com/">cusdis</a>, a lightweight, privacy-first, open-source comment system,</li>
+ <li><a href="https://giscus.app/">giscus</a>,  A comments system powered by <a href="https://docs.github.com/en/discussions">GitHub Discussions</a></li>
+ <li>
+   <p><a href="https://cactus.chat/">Cactus</a>, a federated comment system for the web, based on the Matrix protocol</p>
+ </li>
  <li><code class="language-plaintext highlighter-rouge">comments</code>:
    <ul>
-     <li><code class="language-plaintext highlighter-rouge">provider</code>: Use <code class="language-plaintext highlighter-rouge">disqus</code>, <code class="language-plaintext highlighter-rouge">giscus</code> or <code class="language-plaintext highlighter-rouge">cactus</code> to enable it.</li>
+     <li><code class="language-plaintext highlighter-rouge">provider</code>: Use <code class="language-plaintext highlighter-rouge">disqus</code>, <code class="language-plaintext highlighter-rouge">cusdis</code>, <code class="language-plaintext highlighter-rouge">giscus</code> or <code class="language-plaintext highlighter-rouge">cactus</code> to enable it.</li>
      <li><code class="language-plaintext highlighter-rouge">disqus_shortname</code>: Disqus only. Add your site id, on <code class="language-plaintext highlighter-rouge">https://DISQUS_SHORTNAME.disqus.com/admin/</code>.</li>
+     <li><code class="language-plaintext highlighter-rouge">cusdis_app_id</code>:  Cusdis only, the app id of your service. On cusdis see <strong>Embed code</strong> and
+  use <code class="language-plaintext highlighter-rouge">data-app-id="THIS_IS_THE_APP_ID"</code>.</li>
+     <li><code class="language-plaintext highlighter-rouge">cusdis_host</code>: Cusdis only. If you are self-hosting Cusdis use this field.</li>
      <li><code class="language-plaintext highlighter-rouge">cactus_shortname</code>: Cactus only. The name of the name that you use for registering this site
   with Cactus.</li>
    </ul>
@@ -449,7 +457,7 @@
      <div id="cusdis_thread"
       class = "py-4"
       data-host="https://cusdis.com"
-      data-app-id="288e76e5-75e7-4291-a5ec-7b9383ffa79b"
+      data-app-id="ba6333c9-c7b1-4578-a932-e9ee3e71f120"
       data-page-id="/docs/02_config"
       data-page-url="https://dieghernan.github.io/chulapa/docs/02-config"
       data-page-title="Global settings"
