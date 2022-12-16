@@ -5,7 +5,7 @@
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2022-12-16 14:33:26 +0100 -->
+    <!-- Page build 2022-12-16 21:05:19 +0100 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -17,8 +17,8 @@
       },
       "headline": "Global settings",
       "image": "https://dieghernan.github.io/chulapa/assets/img/site/banner-docs.png",
-      "datePublished": "2022-12-16T14:33:26+01:00",
-      "dateModified": "2022-12-16T14:33:26+01:00",
+      "datePublished": "2022-12-16T21:05:19+01:00",
+      "dateModified": "2022-12-16T21:05:19+01:00",
       "author": {
         "@type": "Person",
         "name": "dieghernan"
@@ -178,7 +178,7 @@
 				</li><li class="nav-item my-0 py-1">
 					<a class="nav-link px-3 py-1" href="https://dieghernan.github.io/chulapa/pagespeed">PageSpeed Results</a>
 				</li><li class="nav-item dropdown my-0 py-1"><a class="nav-link dropdown-toggle px-3 py-1 " href="#" id="About" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-					<div class="dropdown-menu dropdown-menu-right text-center rounded-0 pr-4" aria-labelledby="About"><a class="dropdown-item nav-link d-block px-3 small " href="https://dieghernan.github.io/chulapa/license">License </a><a class="dropdown-item nav-link d-block px-3 small " href="https://dieghernan.github.io/chulapa/showcase">Showcase </a><a class="dropdown-item nav-link d-block px-3 small " href="https://dieghernan.github.io/chulapa/contribute">Contribute </a><a class="dropdown-item nav-link d-block px-3 small " href="https://dieghernan.github.io/chulapa/CHANGELOG">Changelog </a></div>
+					<div class="dropdown-menu dropdown-menu-right text-center rounded-0 pr-4" aria-labelledby="About"><a class="dropdown-item nav-link d-block px-3 small " href="https://dieghernan.github.io/chulapa/license">License </a><a class="dropdown-item nav-link d-block px-3 small " href="https://dieghernan.github.io/chulapa/showcase">Showcase </a><a class="dropdown-item nav-link d-block px-3 small " href="https://dieghernan.github.io/chulapa/contribute">Contribute </a><a class="dropdown-item nav-link d-block px-3 small " href="https://github.com/dieghernan/chulapa/blob/master/CHANGELOG.md">Changelog </a></div>
 				</li><li class="nav-item my-0 py-1">
 					<a class="nav-link px-3 py-1 " href="https://dieghernan.github.io/chulapa/search">Search</a>
 				</li></ul>
@@ -330,22 +330,25 @@
  <li><a href="https://disqus.com/">Disqus</a>, one of the most known comment providers for static sites,</li>
  <li><a href="https://cusdis.com/">cusdis</a>, a lightweight, privacy-first, open-source comment system,</li>
  <li><a href="https://giscus.app/">giscus</a>,  A comments system powered by <a href="https://docs.github.com/en/discussions">GitHub Discussions</a></li>
+ <li><a href="https://cactus.chat/">Cactus</a>, a federated comment system for the web, based on the Matrix protocol</li>
  <li>
-   <p><a href="https://cactus.chat/">Cactus</a>, a federated comment system for the web, based on the Matrix protocol</p>
+   <p><a href="https://welcomments.io/">Welcomments</a>, lightweight, fast, and SEO-friendly comment sections for your site</p>
  </li>
  <li><code class="language-plaintext highlighter-rouge">comments</code>:
    <ul>
-     <li><code class="language-plaintext highlighter-rouge">provider</code>: Use <code class="language-plaintext highlighter-rouge">disqus</code>, <code class="language-plaintext highlighter-rouge">cusdis</code>, <code class="language-plaintext highlighter-rouge">giscus</code> or <code class="language-plaintext highlighter-rouge">cactus</code> to enable it.</li>
+     <li><code class="language-plaintext highlighter-rouge">provider</code>: Use <code class="language-plaintext highlighter-rouge">disqus</code>, <code class="language-plaintext highlighter-rouge">cusdis</code>, <code class="language-plaintext highlighter-rouge">giscus</code>, <code class="language-plaintext highlighter-rouge">cactus</code> or <code class="language-plaintext highlighter-rouge">welcomments</code> to enable it.</li>
      <li><code class="language-plaintext highlighter-rouge">disqus_shortname</code>: Disqus only. Add your site id, on <code class="language-plaintext highlighter-rouge">https://DISQUS_SHORTNAME.disqus.com/admin/</code>.</li>
      <li><code class="language-plaintext highlighter-rouge">cusdis_app_id</code>:  Cusdis only, the app id of your service. On cusdis see <strong>Embed code</strong> and
   use <code class="language-plaintext highlighter-rouge">data-app-id="THIS_IS_THE_APP_ID"</code>.</li>
      <li><code class="language-plaintext highlighter-rouge">cusdis_host</code>: Cusdis only. If you are self-hosting Cusdis use this field.</li>
      <li><code class="language-plaintext highlighter-rouge">cactus_shortname</code>: Cactus only. The name of the name that you use for registering this site
   with Cactus.</li>
+     <li><code class="language-plaintext highlighter-rouge">website_id</code>: Welcomments site id.</li>
    </ul>
  </li>
 </ul>
 <p>Configure <strong>giscus</strong> following their instructions and paste the resulting script on a file hosted on your GitHub repo with path <em>./_includes/custom/giscus.html</em>.</p>
+<p>When setting up <strong>Welcomments</strong>, you may receive a pull request on your site. My suggestion is that you ignore it (except for the <code class="language-plaintext highlighter-rouge">website_id</code>), since <span class="chulapa">Chulapa</span> has some customised templates that would be overridden by the files on the PR.</p>
 <h2 id="b-navigation">B. Navigation</h2>
 <h3 id="navbar">Navbar</h3>
 <p>Configure the navbar and footer of your site. This theme supports a two-level navigation structure, and features <strong>three different navbar styles</strong>: <code class="language-plaintext highlighter-rouge">fab</code>, as a floating action button with animation, a <strong>classic sticky-top navbar</strong> or <code class="language-plaintext highlighter-rouge">dual</code> that would display as <code class="language-plaintext highlighter-rouge">fab</code> on small devices and as a classic navbar on bigger devices.</p>
