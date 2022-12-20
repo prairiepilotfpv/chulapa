@@ -5,7 +5,7 @@
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2022-12-20 20:19:07 +0100 -->
+    <!-- Page build 2022-12-20 20:33:36 +0100 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -17,8 +17,8 @@
       },
       "headline": "Layouts & Snippets",
       "image": "https://dieghernan.github.io/chulapa/assets/img/site/banner-docs.png",
-      "datePublished": "2022-12-20T20:19:07+01:00",
-      "dateModified": "2022-12-20T20:19:07+01:00",
+      "datePublished": "2022-12-20T20:33:36+01:00",
+      "dateModified": "2022-12-20T20:33:36+01:00",
       "author": {
         "@type": "Person",
         "name": "dieghernan"
@@ -528,7 +528,21 @@ https://picsum.photos/seed/70/700/500" %}
 {% include_cached snippets/masonry.html external=externalgallery %}
 </code></pre></div></div>
 <p>That would produce this results:</p>
-<div class="chulapa-masonry mx-2 mt-2"><img loading="lazy" class="chulapa-masonry-brick" src="https://picsum.photos/seed/10/600/1200" alt="Masonry Item #1" /><img loading="lazy" class="chulapa-masonry-brick" src="https://picsum.photos/seed/20/800/500" alt="Masonry Item #2" /><img loading="lazy" class="chulapa-masonry-brick" src="https://picsum.photos/seed/30/900/1200" alt="Masonry Item #3" /><img loading="lazy" class="chulapa-masonry-brick" src="https://picsum.photos/seed/40/900/1300" alt="Masonry Item #4" /><img loading="lazy" class="chulapa-masonry-brick" src="https://picsum.photos/seed/50/750/325" alt="Masonry Item #5" /><img loading="lazy" class="chulapa-masonry-brick" src="https://picsum.photos/seed/60/600" alt="Masonry Item #6" /><img loading="lazy" class="chulapa-masonry-brick" src="https://picsum.photos/seed/70/700/500" alt="Masonry Item #7" /></div>
+<div class="chulapa-masonry mx-2 mt-2"><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://picsum.photos/seed/10/600/1200" alt="Masonry Item #1" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://picsum.photos/seed/20/800/500" alt="Masonry Item #2" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://picsum.photos/seed/30/900/1200" alt="Masonry Item #3" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://picsum.photos/seed/40/900/1300" alt="Masonry Item #4" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://picsum.photos/seed/50/750/325" alt="Masonry Item #5" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://picsum.photos/seed/60/600" alt="Masonry Item #6" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://picsum.photos/seed/70/700/500" alt="Masonry Item #7" itemprop="contentUrl" />
+ </div></div>
 <p>For use it with internal images you may set first a <a href="https://jekyllrb.com/docs/static-files/#add-front-matter-to-static-files">front matter on your desired path</a>. As an example, these docs has an external gallery on <code class="language-plaintext highlighter-rouge">./assets/img/gallery</code>:</p>
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="pi">-</span>
     <span class="na">scope</span><span class="pi">:</span>
@@ -539,7 +553,47 @@ https://picsum.photos/seed/70/700/500" %}
 <p>Then just copy the following snippet:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include_cached snippets/masonry.html internal="gallery" %}
 </code></pre></div></div>
-<div class="chulapa-masonry mx-2 mt-2"><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/yellow-and-beige-high-rise-building-3254729.jpg" alt="Masonry Item #1" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/time-lapse-photography-of-city-during-night-time-4279199.jpg" alt="Masonry Item #2" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/tania-fernandez-zVdf2Hmrcxw-unsplash.jpg" alt="Masonry Item #3" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/quique-olivar-CRMjqDZwxS4-unsplash.jpg" alt="Masonry Item #4" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/paula-carrasco-R30nnrR8j_o-unsplash.jpg" alt="Masonry Item #5" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/patri-k5C0uJ6AIvo-unsplash.jpg" alt="Masonry Item #6" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/mindaugas-petrutis-RxEHnSDyH5I-unsplash.jpg" alt="Masonry Item #7" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/mario-gutierrez-dH7GC5QqO7Y-unsplash.jpg" alt="Masonry Item #8" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/leigh-cooper-ImiT5XEi3Wk-unsplash.jpg" alt="Masonry Item #9" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/jose-manuel-viloria-martin-OEj-ETL9pMo-unsplash.jpg" alt="Masonry Item #10" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/jose-antonio-gallego-vazquez-oTy2TfgAVAc-unsplash.jpg" alt="Masonry Item #11" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/fran-velasco-2OZrVix-nek-unsplash.jpg" alt="Masonry Item #12" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/florian-wehde-WBGjg0DsO_g-unsplash.jpg" alt="Masonry Item #13" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/david-monje-YwrD58FfX9g-unsplash.jpg" alt="Masonry Item #14" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/city-spain-dense-17658.jpg" alt="Masonry Item #15" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/black-metal-post-with-sad-face-paint-3314301.jpg" alt="Masonry Item #16" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/apartment-buildings-against-sky-258181.jpg" alt="Masonry Item #17" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/alvaro-bernal-nlimH6wxY_I-unsplash.jpg" alt="Masonry Item #18" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/alex-vasey-Zy-W7KWEyFE-unsplash.jpg" alt="Masonry Item #19" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/alberto-restifo-BS5kXq5jRL8-unsplash.jpg" alt="Masonry Item #20" /></div>
+<div class="chulapa-masonry mx-2 mt-2"><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/yellow-and-beige-high-rise-building-3254729.jpg" alt="Masonry Item #1" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/time-lapse-photography-of-city-during-night-time-4279199.jpg" alt="Masonry Item #2" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/tania-fernandez-zVdf2Hmrcxw-unsplash.jpg" alt="Masonry Item #3" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/quique-olivar-CRMjqDZwxS4-unsplash.jpg" alt="Masonry Item #4" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/paula-carrasco-R30nnrR8j_o-unsplash.jpg" alt="Masonry Item #5" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/patri-k5C0uJ6AIvo-unsplash.jpg" alt="Masonry Item #6" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/mindaugas-petrutis-RxEHnSDyH5I-unsplash.jpg" alt="Masonry Item #7" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/mario-gutierrez-dH7GC5QqO7Y-unsplash.jpg" alt="Masonry Item #8" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/leigh-cooper-ImiT5XEi3Wk-unsplash.jpg" alt="Masonry Item #9" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/jose-manuel-viloria-martin-OEj-ETL9pMo-unsplash.jpg" alt="Masonry Item #10" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/jose-antonio-gallego-vazquez-oTy2TfgAVAc-unsplash.jpg" alt="Masonry Item #11" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/fran-velasco-2OZrVix-nek-unsplash.jpg" alt="Masonry Item #12" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/florian-wehde-WBGjg0DsO_g-unsplash.jpg" alt="Masonry Item #13" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/david-monje-YwrD58FfX9g-unsplash.jpg" alt="Masonry Item #14" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/city-spain-dense-17658.jpg" alt="Masonry Item #15" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/black-metal-post-with-sad-face-paint-3314301.jpg" alt="Masonry Item #16" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/apartment-buildings-against-sky-258181.jpg" alt="Masonry Item #17" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/alvaro-bernal-nlimH6wxY_I-unsplash.jpg" alt="Masonry Item #18" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/alex-vasey-Zy-W7KWEyFE-unsplash.jpg" alt="Masonry Item #19" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/alberto-restifo-BS5kXq5jRL8-unsplash.jpg" alt="Masonry Item #20" itemprop="contentUrl" />
+ </div></div>
 <p>There are four optional parameters that you can use for controlling the output:</p>
 <ul>
  <li><code class="language-plaintext highlighter-rouge">index_sort</code>: <em>(internal galleries only)</em> See <a href="#index-category">Index category</a>. Note that static files, as images, has a <a href="https://jekyllrb.com/docs/static-files/">limited set of variables</a>. <strong>modified_time</strong>.</li>
@@ -549,7 +603,17 @@ https://picsum.photos/seed/70/700/500" %}
 </ul>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include_cached snippets/masonry.html internal="gallery" index_sort="basename" index_sort_asc="true" index_items=5 %}
 </code></pre></div></div>
-<div class="chulapa-masonry mx-2 mt-2"><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/alberto-restifo-BS5kXq5jRL8-unsplash.jpg" alt="Masonry Item #1" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/alex-vasey-Zy-W7KWEyFE-unsplash.jpg" alt="Masonry Item #2" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/alvaro-bernal-nlimH6wxY_I-unsplash.jpg" alt="Masonry Item #3" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/apartment-buildings-against-sky-258181.jpg" alt="Masonry Item #4" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/black-metal-post-with-sad-face-paint-3314301.jpg" alt="Masonry Item #5" /></div>
+<div class="chulapa-masonry mx-2 mt-2"><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/alberto-restifo-BS5kXq5jRL8-unsplash.jpg" alt="Masonry Item #1" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/alex-vasey-Zy-W7KWEyFE-unsplash.jpg" alt="Masonry Item #2" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/alvaro-bernal-nlimH6wxY_I-unsplash.jpg" alt="Masonry Item #3" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/apartment-buildings-against-sky-258181.jpg" alt="Masonry Item #4" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/black-metal-post-with-sad-face-paint-3314301.jpg" alt="Masonry Item #5" itemprop="contentUrl" />
+ </div></div>
 <p>If you need further control of your output, you can just pass your internal gallery as external:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% assign externalgallery = "
 ./assets/img/gallery/mario-gutierrez-dH7GC5QqO7Y-unsplash.jpg,
@@ -560,7 +624,17 @@ https://picsum.photos/seed/70/700/500,
 
 {% include_cached snippets/masonry.html external=externalgallery %}
 </code></pre></div></div>
-<div class="chulapa-masonry mx-2 mt-2"><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/mario-gutierrez-dH7GC5QqO7Y-unsplash.jpg" alt="Masonry Item #1" /><img loading="lazy" class="chulapa-masonry-brick" src="https://picsum.photos/seed/70/700/500" alt="Masonry Item #2" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/patri-k5C0uJ6AIvo-unsplash.jpg" alt="Masonry Item #3" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/city-spain-dense-17658.jpg" alt="Masonry Item #4" /><img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/fran-velasco-2OZrVix-nek-unsplash.jpg" alt="Masonry Item #5" /></div>
+<div class="chulapa-masonry mx-2 mt-2"><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/mario-gutierrez-dH7GC5QqO7Y-unsplash.jpg" alt="Masonry Item #1" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://picsum.photos/seed/70/700/500" alt="Masonry Item #2" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/patri-k5C0uJ6AIvo-unsplash.jpg" alt="Masonry Item #3" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/city-spain-dense-17658.jpg" alt="Masonry Item #4" itemprop="contentUrl" />
+ </div><div itemscope="" itemtype="https://schema.org/ImageObject">
+  <img loading="lazy" class="chulapa-masonry-brick" src="https://dieghernan.github.io/chulapa/assets/img/gallery/fran-velasco-2OZrVix-nek-unsplash.jpg" alt="Masonry Item #5" itemprop="contentUrl" />
+ </div></div>
 <h3 id="bootstrap-carousel">Bootstrap Carousel</h3>
 <p>This theme has an implementation of the <a href="https://getbootstrap.com/docs/4.4/components/carousel/">Bootstrap 4.x Carousel</a>. The use is similar to the Masonry component with three additional parameters:</p>
 <ul>
@@ -605,64 +679,64 @@ https://picsum.photos/seed/70/700/500,
 	 </ol>	
  <div class="carousel-inner">
        <div class="carousel-item active">
-	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/fran-velasco-2OZrVix-nek-unsplash.jpg" alt="Carousel Item #1" />
+	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/tania-fernandez-zVdf2Hmrcxw-unsplash.jpg" alt="Carousel Item #1" />
 	</div>
        <div class="carousel-item">
-	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/mindaugas-petrutis-RxEHnSDyH5I-unsplash.jpg" alt="Carousel Item #2" />
+	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/david-monje-YwrD58FfX9g-unsplash.jpg" alt="Carousel Item #2" />
 	</div>
        <div class="carousel-item">
 	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/leigh-cooper-ImiT5XEi3Wk-unsplash.jpg" alt="Carousel Item #3" />
 	</div>
        <div class="carousel-item">
-	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/tania-fernandez-zVdf2Hmrcxw-unsplash.jpg" alt="Carousel Item #4" />
+	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/patri-k5C0uJ6AIvo-unsplash.jpg" alt="Carousel Item #4" />
 	</div>
        <div class="carousel-item">
-	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/jose-antonio-gallego-vazquez-oTy2TfgAVAc-unsplash.jpg" alt="Carousel Item #5" />
+	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/city-spain-dense-17658.jpg" alt="Carousel Item #5" />
 	</div>
        <div class="carousel-item">
-	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/black-metal-post-with-sad-face-paint-3314301.jpg" alt="Carousel Item #6" />
+	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/alvaro-bernal-nlimH6wxY_I-unsplash.jpg" alt="Carousel Item #6" />
 	</div>
        <div class="carousel-item">
-	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/patri-k5C0uJ6AIvo-unsplash.jpg" alt="Carousel Item #7" />
+	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/jose-manuel-viloria-martin-OEj-ETL9pMo-unsplash.jpg" alt="Carousel Item #7" />
 	</div>
        <div class="carousel-item">
-	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/yellow-and-beige-high-rise-building-3254729.jpg" alt="Carousel Item #8" />
+	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/time-lapse-photography-of-city-during-night-time-4279199.jpg" alt="Carousel Item #8" />
 	</div>
        <div class="carousel-item">
-	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/apartment-buildings-against-sky-258181.jpg" alt="Carousel Item #9" />
+	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/florian-wehde-WBGjg0DsO_g-unsplash.jpg" alt="Carousel Item #9" />
 	</div>
        <div class="carousel-item">
-	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/alberto-restifo-BS5kXq5jRL8-unsplash.jpg" alt="Carousel Item #10" />
+	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/apartment-buildings-against-sky-258181.jpg" alt="Carousel Item #10" />
 	</div>
        <div class="carousel-item">
-	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/city-spain-dense-17658.jpg" alt="Carousel Item #11" />
+	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/alberto-restifo-BS5kXq5jRL8-unsplash.jpg" alt="Carousel Item #11" />
 	</div>
        <div class="carousel-item">
 	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/alex-vasey-Zy-W7KWEyFE-unsplash.jpg" alt="Carousel Item #12" />
 	</div>
        <div class="carousel-item">
-	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/alvaro-bernal-nlimH6wxY_I-unsplash.jpg" alt="Carousel Item #13" />
+	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/mindaugas-petrutis-RxEHnSDyH5I-unsplash.jpg" alt="Carousel Item #13" />
 	</div>
        <div class="carousel-item">
-	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/florian-wehde-WBGjg0DsO_g-unsplash.jpg" alt="Carousel Item #14" />
+	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/paula-carrasco-R30nnrR8j_o-unsplash.jpg" alt="Carousel Item #14" />
 	</div>
        <div class="carousel-item">
-	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/quique-olivar-CRMjqDZwxS4-unsplash.jpg" alt="Carousel Item #15" />
+	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/mario-gutierrez-dH7GC5QqO7Y-unsplash.jpg" alt="Carousel Item #15" />
 	</div>
        <div class="carousel-item">
-	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/jose-manuel-viloria-martin-OEj-ETL9pMo-unsplash.jpg" alt="Carousel Item #16" />
+	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/quique-olivar-CRMjqDZwxS4-unsplash.jpg" alt="Carousel Item #16" />
 	</div>
        <div class="carousel-item">
-	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/mario-gutierrez-dH7GC5QqO7Y-unsplash.jpg" alt="Carousel Item #17" />
+	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/fran-velasco-2OZrVix-nek-unsplash.jpg" alt="Carousel Item #17" />
 	</div>
        <div class="carousel-item">
-	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/time-lapse-photography-of-city-during-night-time-4279199.jpg" alt="Carousel Item #18" />
+	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/jose-antonio-gallego-vazquez-oTy2TfgAVAc-unsplash.jpg" alt="Carousel Item #18" />
 	</div>
        <div class="carousel-item">
-	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/david-monje-YwrD58FfX9g-unsplash.jpg" alt="Carousel Item #19" />
+	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/yellow-and-beige-high-rise-building-3254729.jpg" alt="Carousel Item #19" />
 	</div>
        <div class="carousel-item">
-	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/paula-carrasco-R30nnrR8j_o-unsplash.jpg" alt="Carousel Item #20" />
+	<img class="d-block mw-100 chulapa-carousel" src="https://dieghernan.github.io/chulapa/assets/img/gallery/black-metal-post-with-sad-face-paint-3314301.jpg" alt="Carousel Item #20" />
 	</div></div>
   <a class="carousel-control-prev" href="#Carousel25578" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -680,6 +754,7 @@ https://picsum.photos/seed/70/700/500,
 <!-- Based on https://github.com/alfurka/jekyll-embed-youtube-lazy-load -->
 <div itemscope="" itemprop="VideoObject" itemtype="https://schema.org/VideoObject">
 <div data-src="1hXYuWTWVww" class="ch_ytdefer embed-responsive embed-responsive-16by9 my-2 chulapa-rounded-lg" style="background-image: url(https://img.youtube.com/vi/1hXYuWTWVww/maxresdefault.jpg); background-position: center; background-size: cover;" itemprop="thumbnailUrl" content="https://img.youtube.com/vi/1hXYuWTWVww/maxresdefault.jpg"> 
+<div class="d-none" itemprop="embedUrl" content="https://www.youtube-nocookie.com/embed/1hXYuWTWVww"></div>
 	<button class="ch_ytdefer_btn" aria-label="Play" style="background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjEwMCUiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmlld0JveD0iMCAwIDY4IDQ4IiB3aWR0aD0iMTAwJSI+PHBhdGggY2xhc3M9Inl0cC1sYXJnZS1wbGF5LWJ1dHRvbi1iZyIgZD0iTTY2LjUyLDcuNzRjLTAuNzgtMi45My0yLjQ5LTUuNDEtNS40Mi02LjE5QzU1Ljc5LC4xMywzNCwwLDM0LDBTMTIuMjEsLjEzLDYuOSwxLjU1IEMzLjk3LDIuMzMsMi4yNyw0LjgxLDEuNDgsNy43NEMwLjA2LDEzLjA1LDAsMjQsMCwyNHMwLjA2LDEwLjk1LDEuNDgsMTYuMjZjMC43OCwyLjkzLDIuNDksNS40MSw1LjQyLDYuMTkgQzEyLjIxLDQ3Ljg3LDM0LDQ4LDM0LDQ4czIxLjc5LTAuMTMsMjcuMS0xLjU1YzIuOTMtMC43OCw0LjY0LTMuMjYsNS40Mi02LjE5QzY3Ljk0LDM0Ljk1LDY4LDI0LDY4LDI0UzY3Ljk0LDEzLjA1LDY2LjUyLDcuNzR6IiBmaWxsPSIjMjEyMTIxIiBmaWxsLW9wYWNpdHk9IjAuOCI+PC9wYXRoPjxwYXRoIGQ9Ik0gNDUsMjQgMjcsMTQgMjcsMzQiIGZpbGw9IiNmZmYiPjwvcGF0aD48L3N2Zz4=&quot;); position: absolute; border: 0px; background-color: transparent; left: calc(50% - 73px/2); top: calc(50% - 52px/2); width: 73px; height: 52px; pointer-events: none;"></button>
 </div>
 </div>
@@ -734,6 +809,7 @@ try loading another image using another option by using the <code class="languag
 <!-- Based on https://github.com/alfurka/jekyll-embed-youtube-lazy-load -->
 <div itemscope="" itemprop="VideoObject" itemtype="https://schema.org/VideoObject">
 <div data-src="1hXYuWTWVww" class="ch_ytdefer embed-responsive embed-responsive-16by9 my-2 chulapa-rounded-lg" style="background-image: url(https://img.youtube.com/vi/1hXYuWTWVww/hq2.jpg); background-position: center; background-size: cover;" itemprop="thumbnailUrl" content="https://img.youtube.com/vi/1hXYuWTWVww/hq2.jpg"> 
+<div class="d-none" itemprop="embedUrl" content="https://www.youtube-nocookie.com/embed/1hXYuWTWVww"></div>
 	<button class="ch_ytdefer_btn" aria-label="Play" style="background-image: url(&quot;data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjEwMCUiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmlld0JveD0iMCAwIDY4IDQ4IiB3aWR0aD0iMTAwJSI+PHBhdGggY2xhc3M9Inl0cC1sYXJnZS1wbGF5LWJ1dHRvbi1iZyIgZD0iTTY2LjUyLDcuNzRjLTAuNzgtMi45My0yLjQ5LTUuNDEtNS40Mi02LjE5QzU1Ljc5LC4xMywzNCwwLDM0LDBTMTIuMjEsLjEzLDYuOSwxLjU1IEMzLjk3LDIuMzMsMi4yNyw0LjgxLDEuNDgsNy43NEMwLjA2LDEzLjA1LDAsMjQsMCwyNHMwLjA2LDEwLjk1LDEuNDgsMTYuMjZjMC43OCwyLjkzLDIuNDksNS40MSw1LjQyLDYuMTkgQzEyLjIxLDQ3Ljg3LDM0LDQ4LDM0LDQ4czIxLjc5LTAuMTMsMjcuMS0xLjU1YzIuOTMtMC43OCw0LjY0LTMuMjYsNS40Mi02LjE5QzY3Ljk0LDM0Ljk1LDY4LDI0LDY4LDI0UzY3Ljk0LDEzLjA1LDY2LjUyLDcuNzR6IiBmaWxsPSIjMjEyMTIxIiBmaWxsLW9wYWNpdHk9IjAuOCI+PC9wYXRoPjxwYXRoIGQ9Ik0gNDUsMjQgMjcsMTQgMjcsMzQiIGZpbGw9IiNmZmYiPjwvcGF0aD48L3N2Zz4=&quot;); position: absolute; border: 0px; background-color: transparent; left: calc(50% - 73px/2); top: calc(50% - 52px/2); width: 73px; height: 52px; pointer-events: none;"></button>
 </div>
 </div>
