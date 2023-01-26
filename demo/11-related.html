@@ -5,7 +5,7 @@
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2023-01-26 21:31:43 +0100 -->
+    <!-- Page build 2023-01-26 22:10:41 +0100 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -153,7 +153,7 @@
 <meta name="theme-color" content="#efebdd">
 <!-- end custom head snippets -->
 </head>
-<body class="d-flex flex-column" id="body">
+<body class="d-flex flex-column h-entry" id="body">
 	<div class="navbar-chulapa-fab">
 		<input type="checkbox" class="navbar-chulapa-fab-button d-none" id="navi-toggle">
 		<label for="navi-toggle" class="navbar-toggler p-1 m-0 text-center d-flex">
@@ -183,7 +183,7 @@
 	</div>	<header class="header-chulapa"><div class="container-lg mt-2">
        <div class="row">
            <div class="col-lg-8 offset-lg-2">
-           <h1>Related</h1>
+           <h1 class="p-name">Related</h1>
            <hr class="mb-0">
 			</div>
 		</div>
@@ -205,7 +205,7 @@
  </ol>
  </nav>
  <div class="chulapaDateSocial">
-            <time datetime="2022-12-01T00:00:00+01:00">01 dec 2022</time>
+            <time datetime="2022-12-01T00:00:00+01:00" class="dt-published" >01 dec 2022</time>
         </div></div><div class="col-lg-3 col-sm-4 col-3 text-right lead chulapaDateSocial">
             <a  href="https://twitter.com/intent/tweet?url=https://dieghernan.github.io/chulapa/demo/11-related&text=Related&via=dhernangomez&hashtags=layoutdefault,headerpost,sociallinks,tags,categories,bottomnavs,author,date,related" title="Share on Twitter" aria-label="Share on Twitter" ><i class="fab fa-twitter-square fa-lg" aria-hidden="true"></i></a>
             <a href="https://toot.kytta.dev/?text=Related%20https://dieghernan.github.io/chulapa/demo/11-related%20%23layoutdefault%20%23headerpost%20%23sociallinks%20%23tags%20%23categories%20%23bottomnavs%20%23author%20%23date%20%23related" title="Share on Mastodon" aria-label="Share on Mastodon"><i class="fa-brands fa-mastodon fa-lg" aria-hidden="true"></i></a>
@@ -227,7 +227,7 @@
 				</div>
 				</div>
 </aside>
-			<article id="maincontent" class="col-lg-8 mt-3 h-entry">
+			<article id="maincontent" class="col-lg-8 mt-3 e-content">
 			<p>This page shows the <code class="language-plaintext highlighter-rouge">related</code> snippet. See how related pages appeared on the bottom.</p>
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
 <span class="na">title</span><span class="pi">:</span> <span class="s">Related</span>
@@ -278,7 +278,7 @@
  <div class="row">
    <div class="col-lg-8 offset-lg-2 col">
       <i class="far fa-folder-open fa-xs" aria-hidden="true"></i>
-      <a href="https://dieghernan.github.io/chulapa/demo/category#demo" class="badge chulapa-pill-bg-secondary">demo</a>
+      <a href="https://dieghernan.github.io/chulapa/demo/category#demo" class="badge chulapa-pill-bg-secondary p-category">demo</a>
      </div>
    </div>
 </div>
@@ -286,15 +286,15 @@
  <div class="row">
    <div class="col-lg-8 offset-lg-2 col">
       <i class="fas fa-tag mr-1 fa-xs" aria-hidden="true"></i>
-      <a href="https://dieghernan.github.io/chulapa/demo/tags#layout-default" class="badge chulapa-pill-bg-primary">layout-default</a>
-      <a href="https://dieghernan.github.io/chulapa/demo/tags#header-post" class="badge chulapa-pill-bg-primary">header-post</a>
-      <a href="https://dieghernan.github.io/chulapa/demo/tags#social-links" class="badge chulapa-pill-bg-primary">social-links</a>
-      <a href="https://dieghernan.github.io/chulapa/demo/tags#tags" class="badge chulapa-pill-bg-primary">tags</a>
-      <a href="https://dieghernan.github.io/chulapa/demo/tags#categories" class="badge chulapa-pill-bg-primary">categories</a>
-      <a href="https://dieghernan.github.io/chulapa/demo/tags#bottom-navs" class="badge chulapa-pill-bg-primary">bottom-navs</a>
-      <a href="https://dieghernan.github.io/chulapa/demo/tags#author" class="badge chulapa-pill-bg-primary">author</a>
-      <a href="https://dieghernan.github.io/chulapa/demo/tags#date" class="badge chulapa-pill-bg-primary">date</a>
-      <a href="https://dieghernan.github.io/chulapa/demo/tags#related" class="badge chulapa-pill-bg-primary">related</a>
+      <a href="https://dieghernan.github.io/chulapa/demo/tags#layout-default" class="badge chulapa-pill-bg-primary p-category">layout-default</a>
+      <a href="https://dieghernan.github.io/chulapa/demo/tags#header-post" class="badge chulapa-pill-bg-primary p-category">header-post</a>
+      <a href="https://dieghernan.github.io/chulapa/demo/tags#social-links" class="badge chulapa-pill-bg-primary p-category">social-links</a>
+      <a href="https://dieghernan.github.io/chulapa/demo/tags#tags" class="badge chulapa-pill-bg-primary p-category">tags</a>
+      <a href="https://dieghernan.github.io/chulapa/demo/tags#categories" class="badge chulapa-pill-bg-primary p-category">categories</a>
+      <a href="https://dieghernan.github.io/chulapa/demo/tags#bottom-navs" class="badge chulapa-pill-bg-primary p-category">bottom-navs</a>
+      <a href="https://dieghernan.github.io/chulapa/demo/tags#author" class="badge chulapa-pill-bg-primary p-category">author</a>
+      <a href="https://dieghernan.github.io/chulapa/demo/tags#date" class="badge chulapa-pill-bg-primary p-category">date</a>
+      <a href="https://dieghernan.github.io/chulapa/demo/tags#related" class="badge chulapa-pill-bg-primary p-category">related</a>
      </div>
    </div>
 </div>

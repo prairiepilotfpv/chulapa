@@ -5,7 +5,7 @@
     <!--  MIT License-->
     <!-- Docs: https://dieghernan.github.io/chulapa -->
     <!-- Repo: https://github.com/dieghernan/chulapa -->
-    <!-- Page build 2023-01-26 21:31:43 +0100 -->
+    <!-- Page build 2023-01-26 22:10:41 +0100 -->
     <!--Google Structured Data-->
     <script type="application/ld+json">
         {
@@ -155,7 +155,7 @@ comments, mathjax and a modified date.
 <meta name="theme-color" content="#efebdd">
 <!-- end custom head snippets -->
 </head>
-<body class="d-flex flex-column" id="body">
+<body class="d-flex flex-column h-entry" id="body">
 	<div class="navbar-chulapa-fab">
 		<input type="checkbox" class="navbar-chulapa-fab-button d-none" id="navi-toggle">
 		<label for="navi-toggle" class="navbar-toggler p-1 m-0 text-center d-flex">
@@ -183,8 +183,8 @@ comments, mathjax and a modified date.
 				</li></ul>
 		</nav>
 	</div>	<header class="d-flex align-items-center hero-chulapa"><div class="container-lg py-4">
-   <h1>Use MathJax</h1><hr class="my-3">
-   <p class="chulapa-subtitle">Project page with a hero header</p>
+   <h1 class="p-name">Use MathJax</h1><hr class="my-3">
+   <p class="chulapa-subtitle p-summary">Project page with a hero header</p>
    <div class="btn-group-vertical btn-group-lg mt-2 text-center" role="group">
       <a href="https://www.mathjax.org/" class="btn chulapa-btn-project" role="button" aria-disabled="true">
                 <i class="fas fa-superscript fa-lg mr-2"></i>Go to MathJax.org</a>
@@ -197,7 +197,7 @@ comments, mathjax and a modified date.
 <div class="row my-1">
 <div class="col-lg-5 offset-lg-2 col small">
  <div class="chulapaDateSocial">
-            <time datetime="2020-02-19T00:00:00+01:00">19 feb 2020</time> 
+            <time class="dt-updated" datetime="2020-02-19T00:00:00+01:00">19 feb 2020</time> 
             <i class="fa fa-redo fa-xs" aria-hidden="true"></i>
             <br>
             <span class="font-weight-light chulapa-text-line-through">03 feb 2020</span>
@@ -210,7 +210,7 @@ comments, mathjax and a modified date.
          </div></div>
 		<div class="row pt-2">
 			<aside class="col-lg-2 mt-lg-3 small"></aside>
-			<article id="maincontent" class="col-lg-8 mt-3 h-entry">
+			<article id="maincontent" class="col-lg-8 mt-3 e-content">
 			<p>This page shows the <code class="language-plaintext highlighter-rouge">hero</code> header with a project button. It also has enabled 
 comments, mathjax and a modified date.</p>
 <p>Example of MathJax:</p>
@@ -273,7 +273,7 @@ comments, mathjax and a modified date.</p>
  <div class="row">
    <div class="col-lg-8 offset-lg-2 col">
       <i class="far fa-folder-open fa-xs" aria-hidden="true"></i>
-      <a href="https://dieghernan.github.io/chulapa/demo/category#demo" class="badge chulapa-pill-bg-secondary">demo</a>
+      <a href="https://dieghernan.github.io/chulapa/demo/category#demo" class="badge chulapa-pill-bg-secondary p-category">demo</a>
      </div>
    </div>
 </div>
@@ -281,16 +281,16 @@ comments, mathjax and a modified date.</p>
  <div class="row">
    <div class="col-lg-8 offset-lg-2 col">
       <i class="fas fa-tag mr-1 fa-xs" aria-hidden="true"></i>
-      <a href="https://dieghernan.github.io/chulapa/demo/tags#layout-default" class="badge chulapa-pill-bg-primary">layout-default</a>
-      <a href="https://dieghernan.github.io/chulapa/demo/tags#header-hero" class="badge chulapa-pill-bg-primary">header-hero</a>
-      <a href="https://dieghernan.github.io/chulapa/demo/tags#mathjax" class="badge chulapa-pill-bg-primary">mathjax</a>
-      <a href="https://dieghernan.github.io/chulapa/demo/tags#social-links" class="badge chulapa-pill-bg-primary">social-links</a>
-      <a href="https://dieghernan.github.io/chulapa/demo/tags#tags" class="badge chulapa-pill-bg-primary">tags</a>
-      <a href="https://dieghernan.github.io/chulapa/demo/tags#categories" class="badge chulapa-pill-bg-primary">categories</a>
-      <a href="https://dieghernan.github.io/chulapa/demo/tags#bottom-navs" class="badge chulapa-pill-bg-primary">bottom-navs</a>
-      <a href="https://dieghernan.github.io/chulapa/demo/tags#date" class="badge chulapa-pill-bg-primary">date</a>
-      <a href="https://dieghernan.github.io/chulapa/demo/tags#project-links" class="badge chulapa-pill-bg-primary">project-links</a>
-      <a href="https://dieghernan.github.io/chulapa/demo/tags#comments" class="badge chulapa-pill-bg-primary">comments</a>
+      <a href="https://dieghernan.github.io/chulapa/demo/tags#layout-default" class="badge chulapa-pill-bg-primary p-category">layout-default</a>
+      <a href="https://dieghernan.github.io/chulapa/demo/tags#header-hero" class="badge chulapa-pill-bg-primary p-category">header-hero</a>
+      <a href="https://dieghernan.github.io/chulapa/demo/tags#mathjax" class="badge chulapa-pill-bg-primary p-category">mathjax</a>
+      <a href="https://dieghernan.github.io/chulapa/demo/tags#social-links" class="badge chulapa-pill-bg-primary p-category">social-links</a>
+      <a href="https://dieghernan.github.io/chulapa/demo/tags#tags" class="badge chulapa-pill-bg-primary p-category">tags</a>
+      <a href="https://dieghernan.github.io/chulapa/demo/tags#categories" class="badge chulapa-pill-bg-primary p-category">categories</a>
+      <a href="https://dieghernan.github.io/chulapa/demo/tags#bottom-navs" class="badge chulapa-pill-bg-primary p-category">bottom-navs</a>
+      <a href="https://dieghernan.github.io/chulapa/demo/tags#date" class="badge chulapa-pill-bg-primary p-category">date</a>
+      <a href="https://dieghernan.github.io/chulapa/demo/tags#project-links" class="badge chulapa-pill-bg-primary p-category">project-links</a>
+      <a href="https://dieghernan.github.io/chulapa/demo/tags#comments" class="badge chulapa-pill-bg-primary p-category">comments</a>
      </div>
    </div>
 </div>
