@@ -5,10 +5,10 @@
 # XX. Installing Chulapa
 
 # With remote theme
-remote_theme: dieghernan/chulapa
+#remote_theme: dieghernan/chulapa
 
 # With gem based method do this instead
-# theme: chulapa-jekyll
+theme: chulapa-jekyll
 # And at this to your Gemfile
 # gem install 'chulapa-jekyll'
 
